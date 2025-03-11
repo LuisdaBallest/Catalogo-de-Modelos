@@ -4,6 +4,12 @@ from PIL import Image
 import requests
 import os
 
+
+
+# Obtener URLs de los archivos desde las variables de entorno
+url_modelos = st.secrets["URL_MODELOS"]
+url_inventario = st.secrets["URL_INVENTARIO"]
+
 # Función para descargar archivos de Google Drive
 def download_file_from_google_drive(url, dest_path):
     response = requests.get(url)
@@ -13,13 +19,12 @@ def download_file_from_google_drive(url, dest_path):
     else:
         st.error(f"Error al descargar el archivo desde {url}")
 
-# URLs de los archivos en Google Drive
-url_modelos = 'https://docs.google.com/spreadsheets/d/1C3MwoUjCEKGWOxv8yxYaISVZ3g2HOr3n/edit?usp=sharing&ouid=102033177283802423491&rtpof=true&sd=true'
-url_inventario = 'https://docs.google.com/spreadsheets/d/1KVz447TxaoQg7XOShyRTZSj0kUQjrqkE/edit?usp=sharing&ouid=102033177283802423491&rtpof=true&sd=true'
+# Descargar los archivos una sola vez al inicio de la aplicación
+if not os.path.exists('Modelos.xlsx'):
+    download_file_from_google_drive(url_modelos, 'Modelos.xlsx')
 
-# Descargar los archivos
-download_file_from_google_drive(url_modelos, 'Modelos.xlsx')
-download_file_from_google_drive(url_inventario, 'Inventario.xlsx')
+if not os.path.exists('Inventario.xlsx'):
+    download_file_from_google_drive(url_inventario, 'Inventario.xlsx')
 
 # Verificar si los archivos se descargaron correctamente
 if not os.path.exists('Modelos.xlsx') or not os.path.exists('Inventario.xlsx'):
