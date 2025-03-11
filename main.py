@@ -11,8 +11,8 @@ def download_file_from_google_drive(url, dest_path):
         f.write(response.content)
 
 # URLs de los archivos en Google Drive
-url_modelos = 'https://drive.google.com/uc?export=download&id=FILE_ID_MODEL'
-url_inventario = 'https://drive.google.com/uc?export=download&id=FILE_ID_INVENTARIO'
+url_modelos = 'https://docs.google.com/spreadsheets/d/1C3MwoUjCEKGWOxv8yxYaISVZ3g2HOr3n/edit?usp=sharing&ouid=102033177283802423491&rtpof=true&sd=true'
+url_inventario = 'https://docs.google.com/spreadsheets/d/1KVz447TxaoQg7XOShyRTZSj0kUQjrqkE/edit?usp=sharing&ouid=102033177283802423491&rtpof=true&sd=true'
 
 # Descargar los archivos
 download_file_from_google_drive(url_modelos, 'Modelos.xlsx')
