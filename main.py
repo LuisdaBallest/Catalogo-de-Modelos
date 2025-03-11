@@ -1,11 +1,26 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
+import requests
 import os
 
-# Cargar datos desde el archivo Excel
-df_modelos_llantas = pd.read_excel('./data/Modelos.xlsx')
-df_inventario = pd.read_excel('./data/Inventario.xlsx')
+# Función para descargar archivos de Google Drive
+def download_file_from_google_drive(url, dest_path):
+    response = requests.get(url)
+    with open(dest_path, 'wb') as f:
+        f.write(response.content)
+
+# URLs de los archivos en Google Drive
+url_modelos = 'https://drive.google.com/uc?export=download&id=FILE_ID_MODEL'
+url_inventario = 'https://drive.google.com/uc?export=download&id=FILE_ID_INVENTARIO'
+
+# Descargar los archivos
+download_file_from_google_drive(url_modelos, 'Modelos.xlsx')
+download_file_from_google_drive(url_inventario, 'Inventario.xlsx')
+
+# Cargar datos desde los archivos Excel descargados
+df_modelos_llantas = pd.read_excel('Modelos.xlsx')
+df_inventario = pd.read_excel('Inventario.xlsx')
 
 # Agrupar por 'Equipment Description' y concatenar las descripciones
 df_modelos_llantas_grouped = df_modelos_llantas.groupby('Equipment Description').agg({
@@ -28,7 +43,7 @@ if search_query:
     df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Equipment Description'].str.contains(search_query, case=False, na=False)]
 
 # Mostrar imágenes correspondientes a cada modelo de equipo en columnas
-num_columns = 3 
+num_columns = 3  # Número de columnas
 columns = st.columns(num_columns)
 
 # Altura fija para las imágenes
