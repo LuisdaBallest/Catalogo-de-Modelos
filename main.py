@@ -19,8 +19,8 @@ download_file_from_google_drive(url_modelos, 'Modelos.xlsx')
 download_file_from_google_drive(url_inventario, 'Inventario.xlsx')
 
 # Cargar datos desde los archivos Excel descargados
-df_modelos_llantas = pd.read_excel('Modelos.xlsx')
-df_inventario = pd.read_excel('Inventario.xlsx')
+df_modelos_llantas = pd.read_excel('Modelos.xlsx', engine='openpyxl')
+df_inventario = pd.read_excel('Inventario.xlsx', engine='openpyxl')
 
 # Agrupar por 'Equipment Description' y concatenar las descripciones
 df_modelos_llantas_grouped = df_modelos_llantas.groupby('Equipment Description').agg({
