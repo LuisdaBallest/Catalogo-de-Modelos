@@ -4,8 +4,6 @@ from PIL import Image, UnidentifiedImageError
 import requests
 import os
 
-
-
 # Solicitar la contraseña al usuario
 password = st.text_input("Introduce la contraseña:", type="password")
 
