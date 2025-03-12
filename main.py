@@ -30,8 +30,8 @@ if not os.path.exists('Modelos.xlsx') or not os.path.exists('Inventario.xlsx'):
 else:
     # Cargar datos desde los archivos Excel descargados
     try:
-        df_modelos_llantas = pd.read_excel('Modelos.xlsx', engine='openpyxl')
-        df_inventario = pd.read_excel('Inventario.xlsx', engine='openpyxl')
+        df_modelos_llantas = pd.read_excel('Modelos.xlsx', engine='openpyxl', dtype={'CAI': str, 'MAXAM': str})
+        df_inventario = pd.read_excel('Inventario.xlsx', engine='openpyxl', dtype={'Código de artículo': str})
     except Exception as e:
         st.error(f"Error al leer los archivos Excel: {e}")
 
@@ -91,7 +91,7 @@ else:
         # Buscar en el inventario para cada CAI
         if pd.notna(row['CAI']):
             for cai in row['CAI'].split(', '):
-                df_inventario_cai = buscar_inventario(cai.astype(str))
+                df_inventario_cai = buscar_inventario(cai)
                 st.sidebar.write(f"**Inventario físico disponible {row['Desc Michelin']} ({cai}):**")
                 for _, row_inv in df_inventario_cai.iterrows():
                     st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
