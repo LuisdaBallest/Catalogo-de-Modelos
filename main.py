@@ -4,9 +4,7 @@ from PIL import Image
 import requests
 import os
 
-
-
-# Obtener URLs de los archivos desde las variables de entorno
+# Obtener URLs de los archivos desde los secretos de Streamlit
 url_modelos = st.secrets["URL_MODELOS"]
 url_inventario = st.secrets["URL_INVENTARIO"]
 
@@ -37,14 +35,14 @@ else:
     except Exception as e:
         st.error(f"Error al leer los archivos Excel: {e}")
 
-    # Agrupar por 'Equipment Description' y concatenar las descripciones
+    # Agrupar por 'Equipment Description' y concatenar las descripciones y códigos de artículo
     df_modelos_llantas_grouped = df_modelos_llantas.groupby('Equipment Description').agg({
         'Manufacturer': 'first',
         'Imagen': 'first',
         'Desc Michelin': lambda x: ', '.join(x.dropna().unique()),
         'Desc MAXAM': lambda x: ', '.join(x.dropna().unique()),
-        'CAI': 'first',
-        'MAXAM': 'first'
+        'CAI': lambda x: ', '.join(x.dropna().astype(str).unique()),
+        'MAXAM': lambda x: ', '.join(x.dropna().astype(str).unique())
     }).reset_index()
 
     st.title("Catálogo de Equipos Mineros")
@@ -90,19 +88,21 @@ else:
         st.sidebar.write(f"**Descripción Michelin:** {row['Desc Michelin']}")
         st.sidebar.write(f"**Descripción MAXAM:** {row['Desc MAXAM']}")
 
-        # Buscar en el inventario para CAI
+        # Buscar en el inventario para cada CAI
         if pd.notna(row['CAI']):
-            df_inventario_cai = buscar_inventario(row['CAI'])
-            st.sidebar.write(f"**Inventario físico disponible {row['Desc Michelin']} ({row['CAI']}):**")
-            for _, row_inv in df_inventario_cai.iterrows():
-                st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
+            for cai in row['CAI'].split(', '):
+                df_inventario_cai = buscar_inventario(cai)
+                st.sidebar.write(f"**Inventario físico disponible {row['Desc Michelin']} ({cai}):**")
+                for _, row_inv in df_inventario_cai.iterrows():
+                    st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
 
-        # Buscar en el inventario para MAXAM
+        # Buscar en el inventario para cada MAXAM
         if pd.notna(row['MAXAM']):
-            df_inventario_maxam = buscar_inventario(row['MAXAM'])
-            st.sidebar.write(f"**Inventario físico disponible {row['Desc MAXAM']} ({row['MAXAM']}):**")
-            for _, row_inv in df_inventario_maxam.iterrows():
-                st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
+            for maxam in row['MAXAM'].split(', '):
+                df_inventario_maxam = buscar_inventario(maxam)
+                st.sidebar.write(f"**Inventario físico disponible {row['Desc MAXAM']} ({maxam}):**")
+                for _, row_inv in df_inventario_maxam.iterrows():
+                    st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
 
     for index, row in df_modelos_llantas_grouped.iterrows():
         col = columns[index % num_columns]
