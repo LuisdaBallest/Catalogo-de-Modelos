@@ -13,7 +13,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD"]:
         st.session_state.password_correct = True
-        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
