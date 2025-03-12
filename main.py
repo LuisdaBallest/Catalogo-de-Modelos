@@ -91,7 +91,7 @@ else:
         # Buscar en el inventario para cada CAI
         if pd.notna(row['CAI']):
             for cai in row['CAI'].split(', '):
-                df_inventario_cai = buscar_inventario(cai)
+                df_inventario_cai = buscar_inventario(cai.astype(str))
                 st.sidebar.write(f"**Inventario físico disponible {row['Desc Michelin']} ({cai}):**")
                 for _, row_inv in df_inventario_cai.iterrows():
                     st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
