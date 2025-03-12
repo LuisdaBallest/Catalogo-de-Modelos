@@ -55,9 +55,9 @@ else:
     if search_query:
         df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Equipment Description'].str.contains(search_query, case=False, na=False)]
 
-    # Mostrar imágenes correspondientes a cada modelo de equipo en columnas
+    # Mostrar imágenes correspondientes a cada modelo de equipo en filas y columnas
     num_columns = 3  # Número de columnas
-    columns = st.columns(num_columns)
+    rows = [df_modelos_llantas_grouped[i:i + num_columns] for i in range(0, df_modelos_llantas_grouped.shape[0], num_columns)]
 
     # Altura fija para las imágenes
     fixed_height = 500
@@ -113,24 +113,25 @@ else:
                     if row_inv['Física disponible'] > 0:
                         st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
 
-    for index, row in df_modelos_llantas_grouped.iterrows():
-        col = columns[index % num_columns]
-        with col:
-            st.markdown(f"<h3>{row['Equipment Description']}</h3>", unsafe_allow_html=True)
-            image_path = os.path.join('./images', row['Imagen'])
-            
-            try:
-                if os.path.exists(image_path):
-                    image = Image.open(image_path)
-                    # Redimensionar la imagen manteniendo la relación de aspecto
-                    aspect_ratio = image.width / image.height
-                    new_width = int(fixed_height * aspect_ratio)
-                    resized_image = image.resize((new_width, fixed_height))
-                    st.image(resized_image, caption=row['Equipment Description'], use_container_width=True)
-                else:
-                    st.write("Imagen no disponible")
-            except UnidentifiedImageError:
-                st.write("Error al cargar la imagen")
-            
-            if st.button(f"Ver detalles de {row['Equipment Description']}", key=f"details_{index}"):
-                mostrar_detalles(row)
+    for row in rows:
+        cols = st.columns(num_columns)
+        for col, (_, row_data) in zip(cols, row.iterrows()):
+            with col:
+                st.markdown(f"<h3>{row_data['Equipment Description']}</h3>", unsafe_allow_html=True)
+                image_path = os.path.join('./images', row_data['Imagen'])
+                
+                try:
+                    if os.path.exists(image_path):
+                        image = Image.open(image_path)
+                        # Redimensionar la imagen manteniendo la relación de aspecto
+                        aspect_ratio = image.width / image.height
+                        new_width = int(fixed_height * aspect_ratio)
+                        resized_image = image.resize((new_width, fixed_height))
+                        st.image(resized_image, caption=row_data['Equipment Description'], use_container_width=True)
+                    else:
+                        st.write("Imagen no disponible")
+                except UnidentifiedImageError:
+                    st.write("Error al cargar la imagen")
+                
+                if st.button(f"Ver detalles de {row_data['Equipment Description']}", key=f"details_{row_data.name}"):
+                    mostrar_detalles(row_data)
