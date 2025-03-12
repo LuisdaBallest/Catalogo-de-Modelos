@@ -94,7 +94,8 @@ else:
                 df_inventario_cai = buscar_inventario(cai)
                 st.sidebar.write(f"**Inventario físico disponible {row['Desc Michelin']} ({cai}):**")
                 for _, row_inv in df_inventario_cai.iterrows():
-                    st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
+                    if row_inv['Física disponible'] > 0:
+                        st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
 
         # Buscar en el inventario para cada MAXAM
         if pd.notna(row['MAXAM']):
@@ -102,7 +103,8 @@ else:
                 df_inventario_maxam = buscar_inventario(maxam)
                 st.sidebar.write(f"**Inventario físico disponible {row['Desc MAXAM']} ({maxam}):**")
                 for _, row_inv in df_inventario_maxam.iterrows():
-                    st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
+                    if row_inv['Física disponible'] > 0:
+                        st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
 
     for index, row in df_modelos_llantas_grouped.iterrows():
         col = columns[index % num_columns]
