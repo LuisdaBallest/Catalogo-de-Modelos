@@ -4,10 +4,21 @@ from PIL import Image, UnidentifiedImageError
 import requests
 import os
 
-# Solicitar la contraseña al usuario
-password = st.text_input("Introduce la contraseña:", type="password")
+# Inicializar la variable de estado para la contraseña
+if 'password_correct' not in st.session_state:
+    st.session_state.password_correct = False
 
-if password == st.secrets["PASSWORD"]:
+# Solicitar la contraseña al usuario si no ha sido verificada
+if not st.session_state.password_correct:
+    password = st.text_input("Introduce la contraseña:", type="password")
+    if password == st.secrets["PASSWORD"]:
+        st.session_state.password_correct = True
+        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+    elif password:
+        st.error("Contraseña incorrecta")
+
+# Mostrar el contenido de la aplicación solo si la contraseña es correcta
+if st.session_state.password_correct:
     # Obtener URLs de los archivos desde los secretos de Streamlit
     url_modelos = st.secrets["URL_MODELOS"]
     url_inventario = st.secrets["URL_INVENTARIO"]
@@ -139,5 +150,3 @@ if password == st.secrets["PASSWORD"]:
                     
                     if st.button(f"Ver detalles de {row_data['Equipment Description']}", key=f"details_{row_data.name}"):
                         mostrar_detalles(row_data)
-else:
-    st.error("Contraseña incorrecta")
