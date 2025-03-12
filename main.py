@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 import requests
 import os
 
@@ -16,14 +16,6 @@ def download_file_from_google_drive(url, dest_path):
             f.write(response.content)
     else:
         st.error(f"Error al descargar el archivo desde {url}")
-
-# Eliminar los archivos existentes antes de descargarlos nuevamente
-#if os.path.exists('Modelos.xlsx'):
-#    os.remove('Modelos.xlsx')
-
-#if os.path.exists('Inventario.xlsx'):
-#    os.remove('Inventario.xlsx')
-
 
 # Descargar los archivos una sola vez al inicio de la aplicación
 if not os.path.exists('Modelos.xlsx'):
@@ -54,7 +46,7 @@ else:
     }).reset_index()
 
     st.title("Catálogo de Equipos Mineros")
-    st.subheader('Equipos Mineros usados en México.')
+    st.subheader('Equipos Mineros usados en México')
 
     # Añadir un buscador para filtrar la lista de modelos
     search_query = st.text_input("Buscar modelo de equipo")
@@ -82,15 +74,18 @@ else:
     def mostrar_detalles(row):
         st.sidebar.title(f"Detalles del equipo: {row['Equipment Description']}")
         image_path = os.path.join('./images', row['Imagen'])  # Asegúrate de tener una columna 'Imagen' en tu Excel
-        if os.path.exists(image_path):
-            image = Image.open(image_path)
-            # Redimensionar la imagen manteniendo la relación de aspecto
-            aspect_ratio = image.width / image.height
-            new_width = int(fixed_height * aspect_ratio)
-            resized_image = image.resize((new_width, fixed_height))
-            st.sidebar.image(resized_image, caption=row['Equipment Description'], use_container_width=True)
-        else:
-            st.sidebar.write("Imagen no disponible")
+        try:
+            if os.path.exists(image_path):
+                image = Image.open(image_path)
+                # Redimensionar la imagen manteniendo la relación de aspecto
+                aspect_ratio = image.width / image.height
+                new_width = int(fixed_height * aspect_ratio)
+                resized_image = image.resize((new_width, fixed_height))
+                st.sidebar.image(resized_image, caption=row['Equipment Description'], use_container_width=True)
+            else:
+                st.sidebar.write("Imagen no disponible")
+        except UnidentifiedImageError:
+            st.sidebar.write("Error al cargar la imagen")
 
         st.sidebar.write(f"**Fabricante:** {row['Manufacturer']}")
         st.sidebar.write(f"**Descripción Michelin:** {row['Desc Michelin']}")
@@ -124,15 +119,18 @@ else:
             st.markdown(f"<h3>{row['Equipment Description']}</h3>", unsafe_allow_html=True)
             image_path = os.path.join('./images', row['Imagen'])
             
-            if os.path.exists(image_path):
-                image = Image.open(image_path)
-                # Redimensionar la imagen manteniendo la relación de aspecto
-                aspect_ratio = image.width / image.height
-                new_width = int(fixed_height * aspect_ratio)
-                resized_image = image.resize((new_width, fixed_height))
-                st.image(resized_image, caption=row['Equipment Description'], use_container_width=True)
-            else:
-                st.write("Imagen no disponible")
+            try:
+                if os.path.exists(image_path):
+                    image = Image.open(image_path)
+                    # Redimensionar la imagen manteniendo la relación de aspecto
+                    aspect_ratio = image.width / image.height
+                    new_width = int(fixed_height * aspect_ratio)
+                    resized_image = image.resize((new_width, fixed_height))
+                    st.image(resized_image, caption=row['Equipment Description'], use_container_width=True)
+                else:
+                    st.write("Imagen no disponible")
+            except UnidentifiedImageError:
+                st.write("Error al cargar la imagen")
             
             if st.button(f"Ver detalles de {row['Equipment Description']}", key=f"details_{index}"):
                 mostrar_detalles(row)
