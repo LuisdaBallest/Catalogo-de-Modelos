@@ -46,7 +46,7 @@ else:
     }).reset_index()
 
     st.title("Catálogo de Equipos Mineros")
-    st.subheader('Equipos Mineros usados en México')
+    st.subheader('Equipos Mineros usados en México.')
 
     # Añadir un buscador para filtrar la lista de modelos
     search_query = st.text_input("Buscar modelo de equipo")
@@ -90,18 +90,22 @@ else:
 
         # Buscar en el inventario para cada CAI
         if pd.notna(row['CAI']):
-            for cai in row['CAI'].split(', '):
+            cai_list = row['CAI'].split(', ')
+            desc_michelin_list = row['Desc Michelin'].split(', ')
+            for cai, desc_michelin in zip(cai_list, desc_michelin_list):
                 df_inventario_cai = buscar_inventario(cai)
-                st.sidebar.write(f"**Inventario físico disponible {row['Desc Michelin']} ({cai}):**")
+                st.sidebar.write(f"**Inventario físico disponible {desc_michelin} ({cai}):**")
                 for _, row_inv in df_inventario_cai.iterrows():
                     if row_inv['Física disponible'] > 0:
                         st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
 
         # Buscar en el inventario para cada MAXAM
         if pd.notna(row['MAXAM']):
-            for maxam in row['MAXAM'].split(', '):
+            maxam_list = row['MAXAM'].split(', ')
+            desc_maxam_list = row['Desc MAXAM'].split(', ')
+            for maxam, desc_maxam in zip(maxam_list, desc_maxam_list):
                 df_inventario_maxam = buscar_inventario(maxam)
-                st.sidebar.write(f"**Inventario físico disponible {row['Desc MAXAM']} ({maxam}):**")
+                st.sidebar.write(f"**Inventario físico disponible {desc_maxam} ({maxam}):**")
                 for _, row_inv in df_inventario_maxam.iterrows():
                     if row_inv['Física disponible'] > 0:
                         st.sidebar.write(f"Almacén: {row_inv['Almacén']}, Cantidad disponible: {row_inv['Física disponible']}")
