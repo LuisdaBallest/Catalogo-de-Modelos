@@ -18,12 +18,12 @@ def download_file_from_google_drive(url, dest_path):
         st.error(f"Error al descargar el archivo desde {url}")
 
 # Eliminar los archivos existentes antes de descargarlos nuevamente
-if os.path.exists('Modelos.xlsx'):
-    os.remove('Modelos.xlsx')
+#if os.path.exists('Modelos.xlsx'):
+#    os.remove('Modelos.xlsx')
 
-if os.path.exists('Inventario.xlsx'):
-    os.remove('Inventario.xlsx')
-    
+#if os.path.exists('Inventario.xlsx'):
+#    os.remove('Inventario.xlsx')
+
 
 # Descargar los archivos una sola vez al inicio de la aplicación
 if not os.path.exists('Modelos.xlsx'):
