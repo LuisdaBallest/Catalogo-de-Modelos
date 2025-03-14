@@ -53,6 +53,20 @@ if st.session_state.password_correct:
     st.title("Catálogo de Equipos Mineros")
     st.subheader('Equipos Mineros usados en México')
 
+    # Obtener opciones únicas para los filtros
+    tipos_equipo = df_modelos_llantas_grouped['Tipo'].unique()
+    fabricantes = df_modelos_llantas_grouped['Fabricante'].unique()
+
+    # Añadir widgets de selección para los filtros
+    tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo))
+    fabricante_seleccionado = st.selectbox("Selecciona el fabricante", ["Todos"] + list(fabricantes))
+
+    # Filtrar el DataFrame en función de las selecciones del usuario
+    if tipo_seleccionado != "Todos":
+        df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Tipo'] == tipo_seleccionado]
+    if fabricante_seleccionado != "Todos":
+        df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Fabricante'] == fabricante_seleccionado]
+
     # Añadir un buscador para filtrar la lista de modelos
     search_query = st.text_input("Buscar modelo de equipo")
 
