@@ -11,7 +11,7 @@ if 'password_correct' not in st.session_state:
 # Solicitar la contraseña al usuario si no ha sido verificada
 if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
-    if password == st.secrets["PASSWORD"]:
+    if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
         st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
@@ -21,11 +21,11 @@ if not st.session_state.password_correct:
 if st.session_state.password_correct:
     # Conectar a la base de datos MySQL usando st.secrets
     conn = mysql.connector.connect(
-        host=st.secrets["mysql"]["host"],
-        port=st.secrets["mysql"]["port"],
-        user=st.secrets["mysql"]["user"],
-        password=st.secrets["mysql"]["password"],
-        database=st.secrets["mysql"]["database"]
+        host=st.secrets["host"],
+        port=st.secrets["port"],
+        user=st.secrets["user"],
+        password=st.secrets["password"],
+        database=st.secrets["database"]
     )
     cursor = conn.cursor(dictionary=True)
 
