@@ -85,8 +85,18 @@ if st.session_state.password_correct:
             st.sidebar.write("Error al cargar la imagen")
 
         st.sidebar.write(f"**Fabricante:** {row['Fabricante']}")
-        st.sidebar.write(f"**Descripción Michelin:** {row['Desc Michelin']}")
-        st.sidebar.write(f"**Descripción MAXAM:** {row['Desc MAXAM']}")
+
+        # Añadir descripciones Michelin con CAI
+        desc_michelin_list = row['Desc Michelin'].split(', ')
+        cai_list = row['CAI'].split(', ')
+        for desc_michelin, cai in zip(desc_michelin_list, cai_list):
+            st.sidebar.write(f"**Descripción Michelin:** {desc_michelin} ({cai})")
+
+        # Añadir descripciones MAXAM con MAXAM
+        desc_maxam_list = row['Desc MAXAM'].split(', ')
+        maxam_list = row['MAXAM'].split(', ')
+        for desc_maxam, maxam in zip(desc_maxam_list, maxam_list):
+            st.sidebar.write(f"**Descripción MAXAM:** {desc_maxam} ({maxam})")
 
     for row in rows:
         cols = st.columns(num_columns)
