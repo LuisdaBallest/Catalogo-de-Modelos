@@ -45,6 +45,10 @@ if st.session_state.password_correct:
     cursor.execute("SELECT * FROM Rines")
     df_rines = pd.DataFrame(cursor.fetchall())
 
+    # Obtener datos de la tabla Equipos_Mina
+    cursor.execute("SELECT * FROM Equipos_Mina")
+    df_equipos_mina = pd.DataFrame(cursor.fetchall())
+
     cursor.close()
     conn.close()
 
@@ -139,6 +143,17 @@ if st.session_state.password_correct:
         if not df_rines_filtrado.empty:
             with st.sidebar.expander("**Rines**"):
                 st.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']].set_index('Codigo KT'))
+
+        # Filtrar datos de la tabla Equipos_Mina
+        df_equipos_mina_filtrado = df_equipos_mina[df_equipos_mina['Equipment Description'] == row['Equipment Description']]
+
+        # Agrupar datos de la tabla Equipos_Mina por 'Mina' y contar el número de equipos
+        df_equipos_mina_grouped = df_equipos_mina_filtrado.groupby('Mina').agg({'No Equipos': 'sum'}).reset_index()
+
+        # Mostrar el número de equipos por mina en el sidebar dentro de un expander
+        if not df_equipos_mina_grouped.empty:
+            with st.sidebar.expander("**Equipos por Mina**"):
+                st.table(df_equipos_mina_grouped)
 
     for row in rows:
         cols = st.columns(num_columns)
