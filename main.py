@@ -4,24 +4,21 @@ from PIL import Image, UnidentifiedImageError
 import mysql.connector
 import os
 
-# CSS para personalizar el estilo
 st.markdown("""
     <style>
-    .main {
-        background-color: #f5f5f5;
-    }
-    .sidebar .sidebar-content {
-        background-color: #f5f5f5;
-    }
-    .stTextInput>div>div>input {
-        border: 2px solid #ccc;
+    .stSelectbox>div>div>div>div {
+        background-color: #FFA500;
+        color: black;
+        border: 2px solid #000;
         border-radius: 4px;
         padding: 10px;
+        font-size: 16px;
     }
-    .stSelectbox>div>div>div>div {
-        border: 2px solid #ccc;
-        border-radius: 2px;
-        padding: 5px;
+    .stSelectbox>div>div>div>div:hover {
+        background-color: #FF8C00;
+    }
+    .stSelectbox>div>div>div>div:focus {
+        border: 2px solid #FF4500;
     }
     </style>
     """, unsafe_allow_html=True)
