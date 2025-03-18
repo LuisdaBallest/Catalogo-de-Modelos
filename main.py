@@ -4,27 +4,6 @@ from PIL import Image, UnidentifiedImageError
 import mysql.connector
 import os
 
-st.markdown("""
-    <style>
-    .stSelectbox>div>div>div {
-        background-color: #FFA500;
-        color: black;
-        border: 2px solid #000;
-        border-radius: 4px;
-        padding: 5px;
-        font-size: 16px;
-    }
-    .stSelectbox>div>div>div:hover {
-        background-color: #FF8C00;
-    }
-    .stSelectbox>div>div>div:focus {
-        border: 2px solid #FF4500;
-    }
-    .stSelectbox>div>div>div>div {
-        padding: 5px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 # Inicializar la variable de estado para la contraseña
 if 'password_correct' not in st.session_state:
