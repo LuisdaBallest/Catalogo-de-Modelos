@@ -153,7 +153,7 @@ if st.session_state.password_correct:
         # Mostrar el número de equipos por mina en el sidebar dentro de un expander
         if not df_equipos_mina_grouped.empty:
             with st.sidebar.expander("**Equipos por Mina**"):
-                st.table(df_equipos_mina_grouped)
+                st.table(df_equipos_mina_grouped.set_index('Mina'))
 
     for row in rows:
         cols = st.columns(num_columns)
