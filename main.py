@@ -41,6 +41,10 @@ if st.session_state.password_correct:
     cursor.execute("SELECT * FROM Valvulas")
     df_valvulas = pd.DataFrame(cursor.fetchall())
 
+    # Obtener datos de la tabla Rines
+    cursor.execute("SELECT * FROM Rines")
+    df_rines = pd.DataFrame(cursor.fetchall())
+
     cursor.close()
     conn.close()
 
@@ -123,6 +127,14 @@ if st.session_state.password_correct:
         if not df_valvulas_filtrado.empty:
             st.sidebar.write("**Válvulas:**")
             st.sidebar.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']])
+
+        # Filtrar datos de la tabla Rines
+        df_rines_filtrado = df_rines[df_rines['Equipment Description'] == row['Equipment Description']]
+
+        # Mostrar tabla de Rines en el sidebar
+        if not df_rines_filtrado.empty:
+            st.sidebar.write("**Rines:**")
+            st.sidebar.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']])
 
     for row in rows:
         cols = st.columns(num_columns)
