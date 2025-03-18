@@ -122,7 +122,7 @@ if st.session_state.password_correct:
         # Mostrar tabla de Valvulas en el sidebar
         if not df_valvulas_filtrado.empty:
             st.sidebar.write("**Válvulas:**")
-            st.sidebar.dataframe(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']])
+            st.sidebar.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']])
 
     for row in rows:
         cols = st.columns(num_columns)
