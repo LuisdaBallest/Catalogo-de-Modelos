@@ -96,9 +96,6 @@ if st.session_state.password_correct:
 
     df_modelos_llantas_grouped = df_modelos.merge(df_modelos_llantas_grouped, on='Equipment Description', how='left')
 
-    # Añadir un logo o imagen de encabezado
-    st.image("path/to/logo.png", width=200)
-
     st.title("Catálogo de Equipos Mineros")
     st.subheader('Equipos Mineros usados en México')
 
