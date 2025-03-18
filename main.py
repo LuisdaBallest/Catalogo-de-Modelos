@@ -66,6 +66,8 @@ if st.session_state.password_correct:
     tipos_equipo = df_modelos_llantas_grouped['Tipo'].unique()
     fabricantes = df_modelos_llantas_grouped['Fabricante'].unique()
 
+    st.divider()
+
     # Añadir widgets de selección para los filtros
     tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo))
     fabricante_seleccionado = st.selectbox("Selecciona el fabricante", ["Todos"] + list(fabricantes))
@@ -78,6 +80,8 @@ if st.session_state.password_correct:
 
     # Añadir un buscador para filtrar la lista de modelos
     search_query = st.text_input("Buscar modelo de equipo")
+
+    st.divider()
 
     # Filtrar el DataFrame en función de la entrada del usuario
     if search_query:
