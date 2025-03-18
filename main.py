@@ -129,7 +129,7 @@ if st.session_state.password_correct:
 
         # Mostrar tabla de Valvulas en el sidebar dentro de un expander
         if not df_valvulas_filtrado.empty:
-            with st.sidebar.expander("Válvulas"):
+            with st.sidebar.expander("**Válvulas**"):
                 st.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']].set_index('Codigo KT'))
 
         # Filtrar datos de la tabla Rines
@@ -137,7 +137,7 @@ if st.session_state.password_correct:
 
         # Mostrar tabla de Rines en el sidebar dentro de un expander
         if not df_rines_filtrado.empty:
-            with st.sidebar.expander("Rines"):
+            with st.sidebar.expander("**Rines**"):
                 st.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']].set_index('Codigo KT'))
 
     for row in rows:
