@@ -3,3 +3,4 @@ requests
 streamlit
 pandas
 mysql-connector-python
+pillow
