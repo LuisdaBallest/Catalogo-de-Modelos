@@ -4,7 +4,6 @@ from PIL import Image, UnidentifiedImageError
 import mysql.connector
 import os
 
-
 # Inicializar la variable de estado para la contraseña
 if 'password_correct' not in st.session_state:
     st.session_state.password_correct = False
@@ -128,18 +127,18 @@ if st.session_state.password_correct:
         # Filtrar datos de la tabla Valvulas
         df_valvulas_filtrado = df_valvulas[df_valvulas['Equipment Description'] == row['Equipment Description']]
 
-        # Mostrar tabla de Valvulas en el sidebar
+        # Mostrar tabla de Valvulas en el sidebar dentro de un expander
         if not df_valvulas_filtrado.empty:
-            st.sidebar.write("**Válvulas:**")
-            st.sidebar.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']].set_index('Codigo KT'))
+            with st.sidebar.expander("Válvulas"):
+                st.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']].set_index('Codigo KT'))
 
         # Filtrar datos de la tabla Rines
         df_rines_filtrado = df_rines[df_rines['Equipment Description'] == row['Equipment Description']]
 
-        # Mostrar tabla de Rines en el sidebar
+        # Mostrar tabla de Rines en el sidebar dentro de un expander
         if not df_rines_filtrado.empty:
-            st.sidebar.write("**Rines:**")
-            st.sidebar.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']].set_index('Codigo KT'))
+            with st.sidebar.expander("Rines"):
+                st.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']].set_index('Codigo KT'))
 
     for row in rows:
         cols = st.columns(num_columns)
