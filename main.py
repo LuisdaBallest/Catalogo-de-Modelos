@@ -13,22 +13,6 @@ st.markdown("""
     .sidebar .sidebar-content {
         background-color: #f5f5f5;
     }
-    .stButton>button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 12px;
-    }
-    .stButton>button:hover {
-        background-color: #45a049;
-    }
     .stTextInput>div>div>input {
         border: 2px solid #ccc;
         border-radius: 4px;
@@ -36,8 +20,8 @@ st.markdown("""
     }
     .stSelectbox>div>div>div>div {
         border: 2px solid #ccc;
-        border-radius: 4px;
-        padding: 10px;
+        border-radius: 2px;
+        padding: 5px;
     }
     </style>
     """, unsafe_allow_html=True)
