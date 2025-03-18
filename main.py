@@ -13,7 +13,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
-        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
@@ -36,6 +36,10 @@ if st.session_state.password_correct:
     # Obtener datos de la tabla llantas
     cursor.execute("SELECT * FROM llantas")
     df_llantas = pd.DataFrame(cursor.fetchall())
+
+    # Obtener datos de la tabla Valvulas
+    cursor.execute("SELECT * FROM Valvulas")
+    df_valvulas = pd.DataFrame(cursor.fetchall())
 
     cursor.close()
     conn.close()
@@ -111,6 +115,14 @@ if st.session_state.password_correct:
         maxam_list = row['MAXAM'].split(', ')
         for desc_maxam, maxam in zip(desc_maxam_list, maxam_list):
             st.sidebar.write(f"**Descripción MAXAM:** {desc_maxam} ({maxam})")
+
+        # Filtrar datos de la tabla Valvulas
+        df_valvulas_filtrado = df_valvulas[df_valvulas['Equipment Description'] == row['Equipment Description']]
+
+        # Mostrar tabla de Valvulas en el sidebar
+        if not df_valvulas_filtrado.empty:
+            st.sidebar.write("**Válvulas:**")
+            st.sidebar.dataframe(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']])
 
     for row in rows:
         cols = st.columns(num_columns)
