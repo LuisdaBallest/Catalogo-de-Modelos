@@ -121,12 +121,12 @@ if st.session_state.password_correct:
             st.sidebar.write(f"**Descripción MAXAM:** {desc_maxam} ({maxam})")
 
         # Filtrar datos de la tabla Valvulas
-        df_valvulas_filtrado = df_valvulas[df_valvulas['Equipment Description'] == row['Equipment Description']].set_index('Equipment Description', inplace=True)
+        df_valvulas_filtrado = df_valvulas[df_valvulas['Equipment Description'] == row['Equipment Description']]
 
         # Mostrar tabla de Valvulas en el sidebar
         if not df_valvulas_filtrado.empty:
             st.sidebar.write("**Válvulas:**")
-            st.sidebar.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']])
+            st.sidebar.table(df_valvulas_filtrado[['Marca Valvula', 'Componente', 'Nombre KT', 'Codigo KT']].set_index('Marca Valvula'))
 
         # Filtrar datos de la tabla Rines
         df_rines_filtrado = df_rines[df_rines['Equipment Description'] == row['Equipment Description']]
@@ -134,7 +134,7 @@ if st.session_state.password_correct:
         # Mostrar tabla de Rines en el sidebar
         if not df_rines_filtrado.empty:
             st.sidebar.write("**Rines:**")
-            st.sidebar.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']])
+            st.sidebar.table(df_rines_filtrado[['Marca Rin', 'Componentes', 'Descripcion Sugerida', 'Codigo KT']].reset_index(drop=True))
 
     for row in rows:
         cols = st.columns(num_columns)
