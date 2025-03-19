@@ -62,6 +62,9 @@ if st.session_state.password_correct:
 
     df_modelos_llantas_grouped = df_modelos.merge(df_modelos_llantas_grouped, on='Equipment Description', how='left')
 
+    # Añadir un identificador al inicio de la página
+    st.markdown('<div id="inicio"></div>', unsafe_allow_html=True)
+
     st.title("Catálogo de Equipos Mineros")
     st.subheader('Equipos Mineros usados en México')
 
@@ -192,7 +195,7 @@ if st.session_state.password_correct:
         .scroll-to-top {
             position: fixed;
             bottom: 100px;
-            right: 100px;
+            right: 50px;
             background-color: #ff5e00;
             color: white;
             border: none;
@@ -203,12 +206,9 @@ if st.session_state.password_correct:
             z-index: 1000;
         }
         </style>
-        <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-            ↑
-        </button>
-        <script>
-        document.querySelector('.scroll-to-top').addEventListener('click', function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        });
-        </script>
+        <a href="#inicio">
+            <button class="scroll-to-top">
+                ↑
+            </button>
+        </a>
         """, unsafe_allow_html=True)
