@@ -76,7 +76,7 @@ if st.session_state.password_correct:
         st.session_state["tipo_seleccionado"] = "Todos"
         st.session_state["fabricante_seleccionado"] = "Todos"
         st.session_state["search_query"] = ""
-        st.rerun()
+        
 
     # Añadir widgets de selección para los filtros
     tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo), key="tipo_seleccionado")
