@@ -204,7 +204,12 @@ if st.session_state.password_correct:
             font-size: 15px;
             cursor: pointer;
             z-index: 1000;
+            opacity: 0.7;
+            transition: opacity 0.3s;
         }
+        .scroll-to-top:hover {
+            opacity: 1;
+        }        
         </style>
         <a href="#inicio">
             <button class="scroll-to-top">
