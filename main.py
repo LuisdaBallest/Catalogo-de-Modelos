@@ -191,8 +191,8 @@ if st.session_state.password_correct:
         <style>
         .scroll-to-top {
             position: fixed;
-            bottom: 50px;
-            right: 20px;
+            bottom: 100px;
+            right: 100px;
             background-color: #ff5e00;
             color: white;
             border: none;
@@ -206,4 +206,9 @@ if st.session_state.password_correct:
         <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
             ↑
         </button>
+        <script>
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        </script>
         """, unsafe_allow_html=True)
