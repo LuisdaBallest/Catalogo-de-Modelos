@@ -185,3 +185,25 @@ if st.session_state.password_correct:
                 
                 if st.button(f"Ver detalles de {row_data['Equipment Description']}", key=f"details_{row_data.name}"):
                     mostrar_detalles(row_data)
+
+    # Añadir el botón de "Volver arriba"
+    st.markdown("""
+        <style>
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        </style>
+        <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            ↑
+        </button>
+        """, unsafe_allow_html=True)
