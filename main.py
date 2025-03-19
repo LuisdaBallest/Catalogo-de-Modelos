@@ -13,7 +13,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
-        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
@@ -71,6 +71,13 @@ if st.session_state.password_correct:
 
     st.divider()
 
+    # Función de devolución de llamada para restablecer los filtros
+    def reset_filters():
+        st.session_state["tipo_seleccionado"] = "Todos"
+        st.session_state["fabricante_seleccionado"] = "Todos"
+        st.session_state["search_query"] = ""
+        st.experimental_rerun()
+
     # Añadir widgets de selección para los filtros
     tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo), key="tipo_seleccionado")
     fabricante_seleccionado = st.selectbox("Selecciona el fabricante", ["Todos"] + list(fabricantes), key="fabricante_seleccionado")
@@ -87,12 +94,7 @@ if st.session_state.password_correct:
         df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Equipment Description'].str.contains(search_query, case=False, na=False)]
 
     # Botón de Limpiar Filtros
-    if st.button("Limpiar Filtros"):
-        # Restablecer los filtros
-        st.session_state["tipo_seleccionado"] = "Todos"
-        st.session_state["fabricante_seleccionado"] = "Todos"
-        st.session_state["search_query"] = ""
-        st.rerun()
+    st.button("Limpiar Filtros", on_click=reset_filters)
 
     st.divider()
 
