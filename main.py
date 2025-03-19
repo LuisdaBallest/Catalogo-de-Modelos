@@ -191,14 +191,14 @@ if st.session_state.password_correct:
         <style>
         .scroll-to-top {
             position: fixed;
-            bottom: 20px;
+            bottom: 50px;
             right: 20px;
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 50%;
             padding: 10px 15px;
-            font-size: 24px;
+            font-size: 12px;
             cursor: pointer;
             z-index: 1000;
         }
