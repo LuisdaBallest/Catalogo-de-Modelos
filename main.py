@@ -13,7 +13,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
-        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
@@ -76,7 +76,7 @@ if st.session_state.password_correct:
         st.session_state["tipo_seleccionado"] = "Todos"
         st.session_state["fabricante_seleccionado"] = "Todos"
         st.session_state["search_query"] = ""
-        st.experimental_rerun()
+        st.rerun()
 
     # Añadir widgets de selección para los filtros
     tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo), key="tipo_seleccionado")
