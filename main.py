@@ -119,24 +119,18 @@ if st.session_state.password_correct:
     # Añadir un buscador para filtrar la lista de modelos
     search_query = st.text_input("Buscar modelo de equipo")
 
-    # Botones de Filtrar y Limpiar Filtros
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("Filtrar"):
-            # Filtrar el DataFrame en función de las selecciones del usuario
-            if tipo_seleccionado != "Todos":
-                df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Tipo'] == tipo_seleccionado]
-            if fabricante_seleccionado != "Todos":
-                df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Fabricante'] == fabricante_seleccionado]
-            if search_query:
-                df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Equipment Description'].str.contains(search_query, case=False, na=False)]
-    with col2:
-        if st.button("Limpiar Filtros"):
-            # Restablecer los filtros
-            tipo_seleccionado = "Todos"
-            fabricante_seleccionado = "Todos"
-            search_query = ""
-            df_modelos_llantas_grouped = df_modelos.merge(df_modelos_llantas_grouped, on='Equipment Description', how='left')
+    # Filtrar el DataFrame en función de las selecciones del usuario
+    if tipo_seleccionado != "Todos":
+        df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Tipo'] == tipo_seleccionado]
+    if fabricante_seleccionado != "Todos":
+        df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Fabricante'] == fabricante_seleccionado]
+    if search_query:
+        df_modelos_llantas_grouped = df_modelos_llantas_grouped[df_modelos_llantas_grouped['Equipment Description'].str.contains(search_query, case=False, na=False)]
+
+    # Botón de Limpiar Filtros
+    if st.button("Limpiar Filtros"):
+        # Restablecer los filtros
+        st.experimental_rerun()
 
     st.divider()
 
