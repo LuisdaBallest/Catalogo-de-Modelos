@@ -7,32 +7,15 @@ import os
 # CSS para personalizar el estilo y espaciado de los elementos
 st.markdown("""
     <style>
-    .stSelectbox>div>div>div {
-        background-color: #FFA500;
-        color: black;
-        border: 2px solid #000;
-        border-radius: 4px;
-        padding: 5px;
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    .stSelectbox>div>div>div:hover {
-        background-color: #FF8C00;
-    }
-    .stSelectbox>div>div>div:focus {
-        border: 2px solid #FF4500;
-    }
-    .stSelectbox>div>div>div>div {
-        padding: 5px;
-    }
-    .stTextInput>div>div>div {
-        margin-bottom: 10px;
-    }
     .stButton>div>button {
         margin-top: 10px;
     }
     .stExpander>div>div {
         margin-top: 10px;
+    }
+    .stColumn {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     </style>
     """, unsafe_allow_html=True)
