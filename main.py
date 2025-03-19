@@ -4,47 +4,6 @@ from PIL import Image, UnidentifiedImageError
 import mysql.connector
 import os
 
-# CSS para personalizar el estilo y espaciado de los elementos
-st.markdown("""
-    <style>
-    .stButton>div>button {
-        margin-top: 10px;
-        background-color: #6200EE;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .stButton>div>button:hover {
-        background-color: #3700B3;
-    }
-    .stExpander>div>div {
-        margin-top: 10px;
-    }
-    .stColumn {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .stSelectbox>div>div>div {
-        background-color: #FFFFFF;
-        color: black;
-        border: 2px solid #6200EE;
-        border-radius: 4px;
-        padding: 5px;
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    .stSelectbox>div>div>div:hover {
-        border: 2px solid #3700B3;
-    }
-    .stTextInput>div>div>div {
-        margin-bottom: 10px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
 # Inicializar la variable de estado para la contraseña
 if 'password_correct' not in st.session_state:
     st.session_state.password_correct = False
@@ -113,11 +72,11 @@ if st.session_state.password_correct:
     st.divider()
 
     # Añadir widgets de selección para los filtros
-    tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo))
-    fabricante_seleccionado = st.selectbox("Selecciona el fabricante", ["Todos"] + list(fabricantes))
+    tipo_seleccionado = st.selectbox("Selecciona el tipo de equipo", ["Todos"] + list(tipos_equipo), key="tipo_seleccionado")
+    fabricante_seleccionado = st.selectbox("Selecciona el fabricante", ["Todos"] + list(fabricantes), key="fabricante_seleccionado")
 
     # Añadir un buscador para filtrar la lista de modelos
-    search_query = st.text_input("Buscar modelo de equipo")
+    search_query = st.text_input("Buscar modelo de equipo", key="search_query")
 
     # Filtrar el DataFrame en función de las selecciones del usuario
     if tipo_seleccionado != "Todos":
@@ -130,6 +89,9 @@ if st.session_state.password_correct:
     # Botón de Limpiar Filtros
     if st.button("Limpiar Filtros"):
         # Restablecer los filtros
+        st.session_state["tipo_seleccionado"] = "Todos"
+        st.session_state["fabricante_seleccionado"] = "Todos"
+        st.session_state["search_query"] = ""
         st.rerun()
 
     st.divider()
