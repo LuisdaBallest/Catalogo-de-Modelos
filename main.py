@@ -4,6 +4,18 @@ from PIL import Image, UnidentifiedImageError
 import mysql.connector
 import os
 
+# Establecer el estilo de la aplicación
+streamlit_style = """
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+			html, body, [class*="css"]  {
+			font-family: 'Roboto', sans-serif;
+			}
+			</style>
+			"""
+st.markdown(streamlit_style, unsafe_allow_html=True)
+
 # Inicializar la variable de estado para la contraseña
 if 'password_correct' not in st.session_state:
     st.session_state.password_correct = False
