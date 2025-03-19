@@ -9,6 +9,16 @@ st.markdown("""
     <style>
     .stButton>div>button {
         margin-top: 10px;
+        background-color: #6200EE;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .stButton>div>button:hover {
+        background-color: #3700B3;
     }
     .stExpander>div>div {
         margin-top: 10px;
@@ -16,6 +26,21 @@ st.markdown("""
     .stColumn {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .stSelectbox>div>div>div {
+        background-color: #FFFFFF;
+        color: black;
+        border: 2px solid #6200EE;
+        border-radius: 4px;
+        padding: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .stSelectbox>div>div>div:hover {
+        border: 2px solid #3700B3;
+    }
+    .stTextInput>div>div>div {
+        margin-bottom: 10px;
     }
     </style>
     """, unsafe_allow_html=True)
