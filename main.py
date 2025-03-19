@@ -193,12 +193,12 @@ if st.session_state.password_correct:
             position: fixed;
             bottom: 50px;
             right: 20px;
-            background-color: #ffa200;
+            background-color: #ff5e00;
             color: white;
             border: none;
             border-radius: 50%;
             padding: 10px 15px;
-            font-size: 16px;
+            font-size: 15px;
             cursor: pointer;
             z-index: 1000;
         }
