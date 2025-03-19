@@ -130,7 +130,7 @@ if st.session_state.password_correct:
     # Botón de Limpiar Filtros
     if st.button("Limpiar Filtros"):
         # Restablecer los filtros
-        st.experimental_rerun()
+        st.rerun()
 
     st.divider()
 
