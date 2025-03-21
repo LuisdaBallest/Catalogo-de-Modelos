@@ -5,6 +5,7 @@ from PIL import Image, UnidentifiedImageError
 import mysql.connector
 import os
 import json
+import pandas as pd
 
 # Inicializar la variable de estado para la contraseña
 if 'password_correct' not in st.session_state:
