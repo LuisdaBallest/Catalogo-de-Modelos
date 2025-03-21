@@ -16,7 +16,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
-        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
@@ -239,21 +239,25 @@ if st.session_state.password_correct:
         # Cargar datos del archivo JSON
         plantas_data = load_plantas_data()
 
+        st.title("Plantas Mineras en México")
+        st.divider()
         # Filtros para las plantas
         col1, col2, col3 = st.columns(3)
         with col1:
-            surface = st.checkbox("Surface", value=True)
+            surface = st.checkbox("Surface", value=True, key="surface")
         with col2:
-            underground = st.checkbox("Underground", value=True)
+            underground = st.checkbox("Underground", value=True, key="underground")
         with col3:
-            quarry = st.checkbox("Quarry", value=True)
+            quarry = st.checkbox("Quarry", value=True, key="quarry")
+        
+        st.divider()
 
         # Filtrar los datos en función de las selecciones del usuario
         filtered_plantas = [
             planta for planta in plantas_data
-            if (surface and planta['Surface'] == 'si') or
-               (underground and planta['Underground'] == 'si') or
-               (quarry and planta['Quarry'] == 'si')
+            if (st.session_state.surface and planta['Surface'] == 'si') or
+               (st.session_state.underground and planta['Underground'] == 'si') or
+               (st.session_state.quarry and planta['Quarry'] == 'si')
         ]
 
         # Crear el mapa
