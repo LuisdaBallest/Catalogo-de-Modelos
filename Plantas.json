@@ -1,0 +1,857 @@
+[
+  {
+    "OPER_NAME": "Minera Media Luna SA de CV",
+    "PLANT_NAME": "Morelos (El Limon-Guajes) A-G/U-G Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 18.012843,
+    "LONGITUDE": -99.745869
+  },
+  {
+    "OPER_NAME": "Mexicana de Cobre SA de CV",
+    "PLANT_NAME": "Agua Prieta Sonora Lime Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 31.242534,
+    "LONGITUDE": -109.645717
+  },
+  {
+    "OPER_NAME": "Corporacion Moctezuma SA de CV",
+    "PLANT_NAME": "Apazapan Cement Plant And Quarry",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 19.3439479,
+    "LONGITUDE": -96.7044464
+  },
+  {
+    "OPER_NAME": "Minera Camino Rojo SA de CV",
+    "PLANT_NAME": "Camino Rojo Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 24.16424139,
+    "LONGITUDE": -101.4979401
+  },
+  {
+    "OPER_NAME": "First Majestic Plata SA",
+    "PLANT_NAME": "Ermitano Gold Silver Mine",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 30.0088789,
+    "LONGITUDE": -110.123841
+  },
+  {
+    "OPER_NAME": "Minera Plata Real S de RL de CV",
+    "PLANT_NAME": "Los Gatos Silver-Lead and Zinc Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 27.54359438,
+    "LONGITUDE": -106.3264139
+  },
+  {
+    "OPER_NAME": "Compania Minera La Llamarada SA de CV",
+    "PLANT_NAME": "Las Chispas Gold-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 30.22096012,
+    "LONGITUDE": -110.1583967
+  },
+  {
+    "OPER_NAME": "Inversiones Mineras La Sorpresa",
+    "PLANT_NAME": "San Miguel del Cantil (La Sorpresa) Gold-Silver Mine",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 24.94472644,
+    "LONGITUDE": -106.2584999
+  },
+  {
+    "OPER_NAME": "Primero Empresa Minera SA de CV (Durango)",
+    "PLANT_NAME": "San Dimas Gold-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 24.106456,
+    "LONGITUDE": -105.911285
+  },
+  {
+    "OPER_NAME": "Compania Minera Cuzcatlan SA de CV",
+    "PLANT_NAME": "San Jose U-G Silver-Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 16.693092,
+    "LONGITUDE": -96.700136
+  },
+  {
+    "OPER_NAME": "First Majestic Plata SA",
+    "PLANT_NAME": "Santa Elena Mine and Mill",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 30.020864,
+    "LONGITUDE": -110.159129
+  },
+  {
+    "OPER_NAME": "Minera y Metalurgica del Boleo SA de CV",
+    "PLANT_NAME": "El Boleo Polymetallic Mine, Mill and SX/EW",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 27.372377,
+    "LONGITUDE": -112.292249
+  },
+  {
+    "OPER_NAME": "Exportadora de Sal SA de CV",
+    "PLANT_NAME": "Guerrero Negro Salt",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 27.894241,
+    "LONGITUDE": -114.129897
+  },
+  {
+    "OPER_NAME": "Omya Mexico SA de CV",
+    "PLANT_NAME": "San Juan del Rio Calcium Carbonate",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 20.446321,
+    "LONGITUDE": -99.962459
+  },
+  {
+    "OPER_NAME": "Consorcio Minero Benito Juarez Pena Colorada SA de CV",
+    "PLANT_NAME": "Pena Colorada Iron Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 19.386842,
+    "LONGITUDE": -104.091437
+  },
+  {
+    "OPER_NAME": "Compania Minera Pitalla SA de CV",
+    "PLANT_NAME": "La Colorada A-G Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 28.802749,
+    "LONGITUDE": -110.571584
+  },
+  {
+    "OPER_NAME": "Minera Cosala SA de CV",
+    "PLANT_NAME": "Los Braceros Processing Plant (Nuestra Se�ora Operations)",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 24.417298,
+    "LONGITUDE": -106.63236
+  },
+  {
+    "OPER_NAME": "Minera Platte River Gold S de RL de CV",
+    "PLANT_NAME": "Cosala Operations Silver/Copper/Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 24.493144,
+    "LONGITUDE": -106.642745
+  },
+  {
+    "OPER_NAME": "Minas de Campo Morado SA de CV",
+    "PLANT_NAME": "Campo Morado Polymetallic Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 18.201215,
+    "LONGITUDE": -100.154096
+  },
+  {
+    "OPER_NAME": "Minera Tayahua SA de CV",
+    "PLANT_NAME": "Tayahua Polymetallic Mine and Mill",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 24.693531,
+    "LONGITUDE": -101.464978
+  },
+  {
+    "OPER_NAME": "Compania Minera Mexicana de Avino SA de CV",
+    "PLANT_NAME": "Avino U-G Silver-Gold Mine Complex",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 24.526673,
+    "LONGITUDE": -104.307607
+  },
+  {
+    "OPER_NAME": "Minera Fresnillo SA de CV (Chihuahua)",
+    "PLANT_NAME": "San Julian Silver-Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 26.03072,
+    "LONGITUDE": -106.500949
+  },
+  {
+    "OPER_NAME": "Minera Real del Oro SA de CV (Argonaut Gold)",
+    "PLANT_NAME": "San Agustin Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 24.787911,
+    "LONGITUDE": -104.600471
+  },
+  {
+    "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
+    "PLANT_NAME": "Topia Silver-Gold-Lead-Zinc Processing Plant and Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 25.20963,
+    "LONGITUDE": -106.568665
+  },
+  {
+    "OPER_NAME": "Don David Gold Mexico SA de CV",
+    "PLANT_NAME": "El Aguila A-G/U-G Gold-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 16.687157,
+    "LONGITUDE": -96.12137
+  },
+  {
+    "OPER_NAME": "Minera Oro Silver de Mexico SA de CV",
+    "PLANT_NAME": "El Compas Silver-Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 22.728564,
+    "LONGITUDE": -102.593211
+  },
+  {
+    "OPER_NAME": "Minera Meridian Mexico S de RL de CV",
+    "PLANT_NAME": "Mercedes Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 30.329356,
+    "LONGITUDE": -110.483028
+  },
+  {
+    "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
+    "PLANT_NAME": "San Ignacio Silver Gold Mine",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 21.04633335,
+    "LONGITUDE": -101.3265411
+  },
+  {
+    "OPER_NAME": "Minera Latin American Zinc SA de CV",
+    "PLANT_NAME": "Plomosas Zinc-Lead-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 29.0784052,
+    "LONGITUDE": -105.2441046
+  },
+  {
+    "OPER_NAME": "Minera Roca Rodando S de RL de CV",
+    "PLANT_NAME": "Hermosillo Pilares Wollastonite Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 29.368209,
+    "LONGITUDE": -111.462289
+  },
+  {
+    "OPER_NAME": "Consorcio Minero Benito Juarez Pena Colorada SA de CV",
+    "PLANT_NAME": "Pena Colorada Iron Pellets",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 19.085566,
+    "LONGITUDE": -104.277177
+  },
+  {
+    "OPER_NAME": "Koura Global",
+    "PLANT_NAME": "Las Cuevas Fluorite Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 21.9418403,
+    "LONGITUDE": -100.5835883
+  },
+  {
+    "OPER_NAME": "Refinadora Plata Guanacevi SA de CV",
+    "PLANT_NAME": "Guanacevi U-G Silver Mine and Mill",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 25.922143,
+    "LONGITUDE": -105.953458
+  },
+  {
+    "OPER_NAME": "Rofomex SA de CV",
+    "PLANT_NAME": "San Juan de la Costa Phosphate Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 24.390891,
+    "LONGITUDE": -110.690887
+  },
+  {
+    "OPER_NAME": "Minera Frisco SAB de CV",
+    "PLANT_NAME": "Ocampo Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 28.183763,
+    "LONGITUDE": -108.383136
+  },
+  {
+    "OPER_NAME": "Minera San Francisco Del Oro SA de CV",
+    "PLANT_NAME": "San Francisco del Oro Silver-Lead & Zinc Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 26.87689629,
+    "LONGITUDE": -105.847984
+  },
+  {
+    "OPER_NAME": "ArcelorMittal Lazaro Cardenas SA de CV",
+    "PLANT_NAME": "Las Truchas Iron Ore Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 18.06375,
+    "LONGITUDE": -102.366781
+  },
+  {
+    "OPER_NAME": "Caleras De La Laguna SA de CV",
+    "PLANT_NAME": "Torreon Lime Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 25.509193,
+    "LONGITUDE": -103.42962
+  },
+  {
+    "OPER_NAME": "Caleras Bertran SA de CV",
+    "PLANT_NAME": "Bertran Antotonilco de Tula Limestone Quarry & Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 20.011554,
+    "LONGITUDE": -99.218723
+  },
+  {
+    "OPER_NAME": "Industrias Penoles SAB de CV",
+    "PLANT_NAME": "Milpillas Copper Mine and SX/EW Plant",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 31.109403,
+    "LONGITUDE": -110.437149
+  },
+  {
+    "OPER_NAME": "Agnico-Eagle Mexico SA de CV",
+    "PLANT_NAME": "La India Gold-Silver Mine and Mill",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 28.7175808,
+    "LONGITUDE": -108.8937449
+  },
+  {
+    "OPER_NAME": "Goldgroup Mining Incorporated",
+    "PLANT_NAME": "Cerro Prieto Gold Mine and Heap Leach",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 30.41428816,
+    "LONGITUDE": -110.6594564
+  },
+  {
+    "OPER_NAME": "Guanajuato Silver Company Limited",
+    "PLANT_NAME": "El Cubo Silver-Gold Mine and Mill",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 21.021114,
+    "LONGITUDE": -101.183201
+  },
+  {
+    "OPER_NAME": "Desarrollos Mineros San Luis SA de CV",
+    "PLANT_NAME": "Los Filos & Bermejal A-G/U-G Gold Mine",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 17.869255,
+    "LONGITUDE": -99.682576
+  },
+  {
+    "OPER_NAME": "Plata Panamericana SA de CV",
+    "PLANT_NAME": "La Colorada Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.380593,
+    "LONGITUDE": -103.757774
+  },
+  {
+    "OPER_NAME": "Aranzazu Holding SA de CV",
+    "PLANT_NAME": "Aranzazu Copper/Silver/Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 24.608881,
+    "LONGITUDE": -101.430105
+  },
+  {
+    "OPER_NAME": "Minera Oro Silver de Mexico SA de CV",
+    "PLANT_NAME": "La Plata Processing Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 22.808807,
+    "LONGITUDE": -102.559244
+  },
+  {
+    "OPER_NAME": "Compania Minera Autlan SA de CV",
+    "PLANT_NAME": "Molango Manganese Complex",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 20.972806,
+    "LONGITUDE": -98.744271
+  },
+  {
+    "OPER_NAME": "Cemex Agregados SA de CV",
+    "PLANT_NAME": "Cerro Jardin Cemex Aggregates Quarry",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "si",
+    "LATITUDE": 19.962801,
+    "LONGITUDE": -99.221249
+  },
+  {
+    "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
+    "PLANT_NAME": "Valenciana Silver-Gold Mine Complex (VMC)",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 21.042661,
+    "LONGITUDE": -101.245788
+  },
+  {
+    "OPER_NAME": "Minera Tizapa SA de CV",
+    "PLANT_NAME": "Tizapa Lead-Zinc-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 19.037775,
+    "LONGITUDE": -100.233301
+  },
+  {
+    "OPER_NAME": "Minera Fresnillo SA de CV",
+    "PLANT_NAME": "Fresnillo Silver/Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.16372,
+    "LONGITUDE": -102.873148
+  },
+  {
+    "OPER_NAME": "Minas de Oro Nacional SA de CV",
+    "PLANT_NAME": "Mulatos Gold Mine and Mill",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 28.639806,
+    "LONGITUDE": -108.742331
+  },
+  {
+    "OPER_NAME": "Agregados y Bloques Cancun SA de CV",
+    "PLANT_NAME": "Cancun Blocks, Gravel and Stone Powder",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 21.135335,
+    "LONGITUDE": -86.908543
+  },
+  {
+    "OPER_NAME": "Industrial Minera Mexico SA de CV",
+    "PLANT_NAME": "Santa Barbara Lead-Zinc-Copper Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 26.815382,
+    "LONGITUDE": -105.81432
+  },
+  {
+    "OPER_NAME": "Ternium Las Encinas SA de CV",
+    "PLANT_NAME": "Aquila (Las Encinas) Iron Ore Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 18.621226,
+    "LONGITUDE": -103.469813
+  },
+  {
+    "OPER_NAME": "Buenavista del Cobre SA de CV",
+    "PLANT_NAME": "Buenavista del Cobre Copper Mine & SX/EW",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 30.960041,
+    "LONGITUDE": -110.315593
+  },
+  {
+    "OPER_NAME": "Compania de Real Del Monte y Pachuca SA de CV",
+    "PLANT_NAME": "Loreto Gold and Silver Processing Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 20.136389,
+    "LONGITUDE": -98.729217
+  },
+  {
+    "OPER_NAME": "Dia Bras Mexicana SA de CV",
+    "PLANT_NAME": "Bolivar Copper-Zinc-Silver-Gold Mine and Mill",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 27.093577,
+    "LONGITUDE": -107.989315
+  },
+  {
+    "OPER_NAME": "Endeavour Silver Corporation SA de CV",
+    "PLANT_NAME": "Guanajuato Bolanitos Silver-Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 21.070999,
+    "LONGITUDE": -101.332459
+  },
+  {
+    "OPER_NAME": "Industrial Minera Mexico SA de CV",
+    "PLANT_NAME": "San Martin Copper-Lead-Zinc Ore Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.664754,
+    "LONGITUDE": -103.745898
+  },
+  {
+    "OPER_NAME": "Cobre Del Mayo SA de CV",
+    "PLANT_NAME": "Piedras Verdes A-G Copper Mine and SX/EW",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 27.160661,
+    "LONGITUDE": -109.021119
+  },
+  {
+    "OPER_NAME": "Minera Saucito SA de CV",
+    "PLANT_NAME": "Saucito Gold-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.127149,
+    "LONGITUDE": -102.925982
+  },
+  {
+    "OPER_NAME": "Minera Alamos de Sonora SA de CV",
+    "PLANT_NAME": "Santana Gold Mine and Heap Leach",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 28.36389332,
+    "LONGITUDE": -109.2005227
+  },
+  {
+    "OPER_NAME": "Calizas Industriales del Carmen SA",
+    "PLANT_NAME": "Colonia Planta Calica Limestone Quarry",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "si",
+    "LATITUDE": 20.58627,
+    "LONGITUDE": -87.154489
+  },
+  {
+    "OPER_NAME": "Sales del Istmo SA de CV",
+    "PLANT_NAME": "Coatzacoalcos Solution Salt Mine and Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 18.106702,
+    "LONGITUDE": -94.393233
+  },
+  {
+    "OPER_NAME": "Cemex Agregados SA de CV",
+    "PLANT_NAME": "Tula Cemex Aggregates Quarry",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "si",
+    "LATITUDE": 20.020996,
+    "LONGITUDE": -99.304109
+  },
+  {
+    "OPER_NAME": "Covia Mexico",
+    "PLANT_NAME": "Veracruz Silica Sand Processing",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 17.97966486,
+    "LONGITUDE": -94.71757966
+  },
+  {
+    "OPER_NAME": "Minera Pena de Bernal SA de CV",
+    "PLANT_NAME": "San Martin U-G Gold/Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 20.730506,
+    "LONGITUDE": -99.9756
+  },
+  {
+    "OPER_NAME": "Minera La Encantada SA de CV",
+    "PLANT_NAME": "La Encantada Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 28.359435,
+    "LONGITUDE": -102.560246
+  },
+  {
+    "OPER_NAME": "Calidra de Oriente SA de CV",
+    "PLANT_NAME": "Puebla Acajete Limestone Mine and Lime Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 19.113484,
+    "LONGITUDE": -97.886607
+  },
+  {
+    "OPER_NAME": "Real de la Bufa SA de CV",
+    "PLANT_NAME": "Tahuehueto Gold Ore Mine and Mill",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 25.437026,
+    "LONGITUDE": -106.638484
+  },
+  {
+    "OPER_NAME": "Minera Penasquito SA de CV",
+    "PLANT_NAME": "Penasquito Gold-Silver-Zinc-Lead Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 24.648197,
+    "LONGITUDE": -101.688831
+  },
+  {
+    "OPER_NAME": "Mexicana de Cobre SA de CV",
+    "PLANT_NAME": "La Caridad Copper Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 30.322258,
+    "LONGITUDE": -109.559698
+  },
+  {
+    "OPER_NAME": "Minera Penmont S de RL de CV",
+    "PLANT_NAME": "Herradura Noche Buena A-G Gold Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 31.02533,
+    "LONGITUDE": -112.6482
+  },
+  {
+    "OPER_NAME": "Minera Mexicana La Cienega SA de CV",
+    "PLANT_NAME": "La Cienega U-G Silver-Gold-Zinc Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 25.046637,
+    "LONGITUDE": -106.344083
+  },
+  {
+    "OPER_NAME": "Minera Capela SA de CV",
+    "PLANT_NAME": "Capela (former Rey de Plata) Polymetallic Mine and Mill",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 18.306645,
+    "LONGITUDE": -99.930181
+  },
+  {
+    "OPER_NAME": "Agnico-Eagle Mexico SA de CV",
+    "PLANT_NAME": "Pinos Altos A-G/U-G Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 28.266629,
+    "LONGITUDE": -108.2871608
+  },
+  {
+    "OPER_NAME": "Carrizal Mining SA de CV",
+    "PLANT_NAME": "El Carrizal Copper-Lead-Zinc Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 20.793574,
+    "LONGITUDE": -99.449353
+  },
+  {
+    "OPER_NAME": "Carrizal Mining SA de CV",
+    "PLANT_NAME": "Monte Copper-Lead-Zinc Mine and Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 20.792423,
+    "LONGITUDE": -99.335753
+  },
+  {
+    "OPER_NAME": "Coanzamex SA de CV",
+    "PLANT_NAME": "Parral Silver-Gold Tailings Processing Plant",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 26.944303,
+    "LONGITUDE": -105.660879
+  },
+  {
+    "OPER_NAME": "Cemex Mexico SA de CV",
+    "PLANT_NAME": "Merida Quarry and Cement",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "si",
+    "LATITUDE": 20.944171,
+    "LONGITUDE": -89.664137
+  },
+  {
+    "OPER_NAME": "Compania Minera Caopas SA de CV",
+    "PLANT_NAME": "Mulege A-G Gypsum",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 27.395945,
+    "LONGITUDE": -112.335564
+  },
+  {
+    "OPER_NAME": "Silice del Istmo SA de CV",
+    "PLANT_NAME": "Acayucan Silica Sand Mine and Plant",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 17.8963253,
+    "LONGITUDE": -95.03683184
+  },
+  {
+    "OPER_NAME": "Capstone Gold SA de CV",
+    "PLANT_NAME": "Cozamin U-G Copper Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 22.802049,
+    "LONGITUDE": -102.585824
+  },
+  {
+    "OPER_NAME": "Coeur Mexicana SA de CV",
+    "PLANT_NAME": "Palmarejo Silver-Gold Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 27.3916135,
+    "LONGITUDE": -108.4119915
+  },
+  {
+    "OPER_NAME": "Compania Minera Sabinas SA de CV",
+    "PLANT_NAME": "Sabinas Polymetallic Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.654775,
+    "LONGITUDE": -103.751578
+  },
+  {
+    "OPER_NAME": "Industrial Minera Mexico SA de CV",
+    "PLANT_NAME": "Charcas U-G Copper Lead and Zinc Ore Mining",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.141638,
+    "LONGITUDE": -101.16114
+  },
+  {
+    "OPER_NAME": "Calidra de Occidente SA de CV",
+    "PLANT_NAME": "Zapotiltic Limestone Quarry #2 and Lime",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "si",
+    "LATITUDE": 19.640801,
+    "LONGITUDE": -103.436298
+  },
+  {
+    "OPER_NAME": "Ternium Las Encinas SA de CV",
+    "PLANT_NAME": "Alzada Las Encinas Iron Pellets",
+    "Surface": "no",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 19.255336,
+    "LONGITUDE": -103.531316
+  },
+  {
+    "OPER_NAME": "Fresnillo Plc",
+    "PLANT_NAME": "Juanicipio Silver/Gold Mine and Mill",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 23.11771,
+    "LONGITUDE": -102.959566
+  },
+  {
+    "OPER_NAME": "Minera Roble SA De CV",
+    "PLANT_NAME": "Velardena Zinc-Lead-Silver Mine",
+    "Surface": "no",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 25.060997,
+    "LONGITUDE": -103.734327
+  },
+  {
+    "OPER_NAME": "Minera Penmont S de RL de CV",
+    "PLANT_NAME": "La Herradura Gold Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 31.148846,
+    "LONGITUDE": -112.852797
+  },
+  {
+    "OPER_NAME": "Compania Minera Dolores SA de CV",
+    "PLANT_NAME": "Dolores A-G Gold-Silver Mine",
+    "Surface": "si",
+    "Underground": "si",
+    "Quarry": "no",
+    "LATITUDE": 28.988621,
+    "LONGITUDE": -108.551054
+  },
+  {
+    "OPER_NAME": "Grupo Mexico SAB de CV",
+    "PLANT_NAME": "Pilares Copper Mine",
+    "Surface": "si",
+    "Underground": "no",
+    "Quarry": "no",
+    "LATITUDE": 30.195068,
+    "LONGITUDE": -109.374933
+  }
+]
