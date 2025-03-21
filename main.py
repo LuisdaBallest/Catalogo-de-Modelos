@@ -251,7 +251,7 @@ if st.session_state.password_correct:
                 folium.Marker(
                     location=[planta['LATITUDE'], planta['LONGITUDE']],
                     popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})",
-                    tooltip=planta['PLANT_NAME']
+                    tooltip=planta['PLANT_NAME'],
                     icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'blue' if planta['Underground'] == 'si' else 'red')
                 ).add_to(m)
 
