@@ -280,26 +280,37 @@ if st.session_state.password_correct:
                     popup=folium.Popup(f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})", parse_html=True),
                     tooltip=planta['PLANT_NAME'],
                     icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue', icon="person-digging", prefix='fa')
-                ).add_to(m).add_child(folium.ClickForMarker(popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})"))
+                ).add_to(m)
+
+            # Añadir LatLngPopup al mapa
+            folium.LatLngPopup().add_to(m)
 
             # Mostrar el mapa en Streamlit
             map_data = st_folium(m, use_container_width=True, zoom=5)
 
-            # Mostrar detalles de la planta seleccionada en el sidebar
-            if map_data and map_data['last_object_clicked']:
-                last_clicked = map_data['last_object_clicked']
+            # Mostrar detalles de la planta seleccionada en un popup
+            if map_data and map_data['last_clicked']:
+                last_clicked = map_data['last_clicked']
                 for planta in filtered_plantas:
                     if planta['LATITUDE'] == last_clicked['lat'] and planta['LONGITUDE'] == last_clicked['lng']:
-                        st.session_state.selected_planta = planta
+                        popup_content = f"""
+                        <b>Detalles de la planta:</b><br>
+                        <b>Nombre:</b> {planta['PLANT_NAME']}<br>
+                        <b>Operador:</b> {planta['OPER_NAME']}<br>
+                        <b>Dirección:</b> {planta['Direccion']}<br>
+                        <b>Ciudad:</b> {planta['Ciudad']}<br>
+                        <b>Estado:</b> {planta['Estado']}<br>
+                        <b>Web:</b> <a href="{planta['WEB']}" target="_blank">{planta['WEB']}</a>
+                        """
+                        folium.Marker(
+                            location=[planta['LATITUDE'], planta['LONGITUDE']],
+                            popup=folium.Popup(popup_content, max_width=300),
+                            tooltip=planta['PLANT_NAME'],
+                            icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue', icon="person-digging", prefix='fa')
+                        ).add_to(m)
                         break
 
-            if st.session_state.selected_planta is not None:
-                selected_planta = st.session_state.selected_planta
-                st.sidebar.title(f"Detalles de la planta: {selected_planta['PLANT_NAME']}")
-                st.sidebar.write(f"**Operador:** {selected_planta['OPER_NAME']}")
-                st.sidebar.write(f"**Dirección:** {selected_planta['Direccion']}")
-                st.sidebar.write(f"**Ciudad:** {selected_planta['Ciudad']}")
-                st.sidebar.write(f"**Estado:** {selected_planta['Estado']}")
-                st.sidebar.write(f"**Web:** {selected_planta['WEB']}")
+            # Actualizar el mapa en Streamlit
+            st_folium(m, use_container_width=True, zoom=5)
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
