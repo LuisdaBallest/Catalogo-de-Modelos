@@ -255,9 +255,10 @@ if st.session_state.password_correct:
         # Filtrar los datos en función de las selecciones del usuario
         filtered_plantas = [
             planta for planta in plantas_data
-            if (st.session_state.surface and planta['Surface'] == 'si') and
+            if (st.session_state.surface and planta['Surface'] == 'si') or
                (st.session_state.underground and planta['Underground'] == 'si') or
-               (st.session_state.quarry and planta['Quarry'] == 'si')
+               (st.session_state.quarry and planta['Quarry'] == 'si') or
+               (st.session_state.underground_surface and planta['Underground'] == 'si' and planta['Surface'] == 'si')
         ]
 
         # Crear el mapa
