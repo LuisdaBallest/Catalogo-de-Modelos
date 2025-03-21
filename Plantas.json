@@ -10,7 +10,8 @@
     "Direccion": "56 Kilometers North West Chilpancingo De Los Bravo",
     "Ciudad": "El Limon",
     "Estado": "Guerrero",
-    "WEB": "https://torexgold.com/"
+    "WEB": "https://torexgold.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Mexicana de Cobre SA de CV",
@@ -23,7 +24,8 @@
     "Direccion": "Km 18 Carretera Agua Prieta Azacozari Rancho El Fresnal",
     "Ciudad": "Agua Prieta",
     "Estado": "Sonora",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Lime"
   },
   {
     "OPER_NAME": "Corporacion Moctezuma SA de CV",
@@ -36,7 +38,8 @@
     "Direccion": "Predio Los Gallineros, Camino vecinal al Cerro Colorado km 1",
     "Ciudad": "Apazapan",
     "Estado": "Veracruz",
-    "WEB": "www.cmoctezuma.com.mx"
+    "WEB": "www.cmoctezuma.com.mx",
+    "Descripcion": "Cement, Hydraulic"
   },
   {
     "OPER_NAME": "Minera Camino Rojo SA de CV",
@@ -49,7 +52,8 @@
     "Direccion": "Carretera Federal Mexico 54",
     "Ciudad": "Mazapil",
     "Estado": "Zacatecas",
-    "WEB": "https://orlamining.com/"
+    "WEB": "https://orlamining.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "First Majestic Plata SA",
@@ -62,7 +66,8 @@
     "Direccion": "12 Kilometers South East Banamichi",
     "Ciudad": "Banamichi",
     "Estado": "Sonora",
-    "WEB": "https://www.firstmajestic.com/"
+    "WEB": "https://www.firstmajestic.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Plata Real S de RL de CV",
@@ -75,7 +80,8 @@
     "Direccion": "145 Kilometers South West Chihuahua City",
     "Ciudad": "Valle Del Rosario",
     "Estado": "Chihuahua",
-    "WEB": "https://www.firstmajestic.com/"
+    "WEB": "https://www.firstmajestic.com/",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera La Llamarada SA de CV",
@@ -88,7 +94,8 @@
     "Direccion": "180 Km Northeast Hermosillo City",
     "Ciudad": "Arizpe",
     "Estado": "Sonora",
-    "WEB": "www.coeur.com"
+    "WEB": "www.coeur.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Inversiones Mineras La Sorpresa",
@@ -101,7 +108,8 @@
     "Direccion": "195 km North West to Durango",
     "Ciudad": "Santiago Papasquiaro",
     "Estado": "Durango",
-    "WEB": "sorpresamining.com"
+    "WEB": "sorpresamining.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Primero Empresa Minera SA de CV (Durango)",
@@ -114,7 +122,8 @@
     "Direccion": "Avenida 16 de Septiembre 51 Poblado de Tayoltita",
     "Ciudad": "Tayoltita",
     "Estado": "Durango",
-    "WEB": "https://www.firstmajestic.com/"
+    "WEB": "https://www.firstmajestic.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera Cuzcatlan SA de CV",
@@ -127,7 +136,8 @@
     "Direccion": "Highway 175, 40KM South of Oaxaca",
     "Ciudad": "Oaxaca",
     "Estado": "Oaxaca",
-    "WEB": "https://fortunamining.com/investors/"
+    "WEB": "https://fortunamining.com/investors/",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "First Majestic Plata SA",
@@ -140,7 +150,8 @@
     "Direccion": "130 Kilometers North East Hermosillo",
     "Ciudad": "Banamichi",
     "Estado": "Sonora",
-    "WEB": "https://www.firstmajestic.com/"
+    "WEB": "https://www.firstmajestic.com/",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera y Metalurgica del Boleo SA de CV",
@@ -153,7 +164,8 @@
     "Direccion": "Carretera Transpeninsular N 1 Km 5.5 al Norte",
     "Ciudad": "Santa Rosalia",
     "Estado": "Baja California Del Sur",
-    "WEB": "https://www.kores.or.kr/eng/userMain/engMain.do"
+    "WEB": "https://www.kores.or.kr/eng/userMain/engMain.do",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Exportadora de Sal SA de CV",
@@ -166,7 +178,8 @@
     "Direccion": "Avenida Baja California S/N",
     "Ciudad": "Mulege",
     "Estado": "Baja California Del Sur",
-    "WEB": "www.essa.com.mx"
+    "WEB": "www.essa.com.mx",
+    "Descripcion": "Chemical & Fertilizer Mineral Mining"
   },
   {
     "OPER_NAME": "Omya Mexico SA de CV",
@@ -179,7 +192,8 @@
     "Direccion": "Carretera San Juan del Rio - Tequisquiapan Km 7.5",
     "Ciudad": "San Juan Del Rio",
     "Estado": "Queretaro",
-    "WEB": "www.omya.com"
+    "WEB": "www.omya.com",
+    "Descripcion": "Crushed & Broken Limestone"
   },
   {
     "OPER_NAME": "Consorcio Minero Benito Juarez Pena Colorada SA de CV",
@@ -192,7 +206,8 @@
     "Direccion": "Cerro Los Juanes S/N, Domicilio Conocido",
     "Ciudad": "Minatitlan",
     "Estado": "Colima",
-    "WEB": "www.techint.com"
+    "WEB": "www.techint.com",
+    "Descripcion": "Iron Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera Pitalla SA de CV",
@@ -205,7 +220,8 @@
     "Direccion": "Boulevard Carlos Quintero Arce 24-B",
     "Ciudad": "Hermosillo",
     "Estado": "Sonora",
-    "WEB": "www.heliostarmetals.com"
+    "WEB": "www.heliostarmetals.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Cosala SA de CV",
@@ -218,7 +234,8 @@
     "Direccion": "6 Kilometers East Cosala",
     "Ciudad": "Cosala",
     "Estado": "Sinaloa",
-    "WEB": "www.americas-gold.com"
+    "WEB": "www.americas-gold.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Platte River Gold S de RL de CV",
@@ -231,7 +248,8 @@
     "Direccion": "10 Kilometers North Cosala",
     "Ciudad": "Cosala",
     "Estado": "Sinaloa",
-    "WEB": "www.americas-gold.com"
+    "WEB": "www.americas-gold.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minas de Campo Morado SA de CV",
@@ -244,7 +262,8 @@
     "Direccion": "Campo Morado S/N Municipio de Arcelia Guerrero",
     "Ciudad": "Teloloapan",
     "Estado": "Guerrero",
-    "WEB": "www.lucamining.com"
+    "WEB": "www.lucamining.com",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Minera Tayahua SA de CV",
@@ -257,7 +276,8 @@
     "Direccion": "Domicilio Conocido SN",
     "Ciudad": "Mazapil",
     "Estado": "Zacatecas",
-    "WEB": "www.minerafrisco.com.mx"
+    "WEB": "www.minerafrisco.com.mx",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera Mexicana de Avino SA de CV",
@@ -270,7 +290,8 @@
     "Direccion": "65 Kilometers North West Durango",
     "Ciudad": "Panuco De Coronado",
     "Estado": "Durango",
-    "WEB": "www.avino.com"
+    "WEB": "www.avino.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Fresnillo SA de CV (Chihuahua)",
@@ -283,7 +304,8 @@
     "Direccion": "45Km East from Guadalupe y Calvo",
     "Ciudad": "Hidalgo Del Parral",
     "Estado": "Chihuahua",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Real del Oro SA de CV (Argonaut Gold)",
@@ -296,7 +318,8 @@
     "Direccion": "86 Kilometers North Durango",
     "Ciudad": "San Juan Del Rio",
     "Estado": "Durango",
-    "WEB": "www.heliostarmetals.com"
+    "WEB": "www.heliostarmetals.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
@@ -309,7 +332,8 @@
     "Direccion": "Boulevard La Sierra 1 Centro",
     "Ciudad": "Topia",
     "Estado": "Durango",
-    "WEB": "www.gsilver.com"
+    "WEB": "www.gsilver.com",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Don David Gold Mexico SA de CV",
@@ -322,7 +346,8 @@
     "Direccion": "80 Kilometers Southeast of Oaxaca",
     "Ciudad": "Oaxaca",
     "Estado": "Oaxaca",
-    "WEB": "http://www.goldresourcecorp.com/"
+    "WEB": "http://www.goldresourcecorp.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Oro Silver de Mexico SA de CV",
@@ -335,7 +360,8 @@
     "Direccion": "El Orito",
     "Ciudad": "Zacatecas",
     "Estado": "Zacatecas",
-    "WEB": "www.gruporosgo.com"
+    "WEB": "www.gruporosgo.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Meridian Mexico S de RL de CV",
@@ -348,7 +374,8 @@
     "Direccion": "20KM East of Cucurpe",
     "Ciudad": "Cucurpe",
     "Estado": "Sonora",
-    "WEB": "www.bearcreekmining.com"
+    "WEB": "www.bearcreekmining.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
@@ -361,7 +388,8 @@
     "Direccion": "4 Km South of Mineral de la Luz",
     "Ciudad": "Guanajuato",
     "Estado": "Guanajuato",
-    "WEB": "www.gsilver.com"
+    "WEB": "www.gsilver.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Latin American Zinc SA de CV",
@@ -374,7 +402,8 @@
     "Direccion": "80 Kilometers North East Chihuahua",
     "Ciudad": "Chihuahua",
     "Estado": "Chihuahua",
-    "WEB": "https://impactsilver.com/"
+    "WEB": "https://impactsilver.com/",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Minera Roca Rodando S de RL de CV",
@@ -387,7 +416,8 @@
     "Direccion": "62 Kilometers North West Hermosillo",
     "Ciudad": "Hermosillo",
     "Estado": "Sonora",
-    "WEB": "www.imerys.com"
+    "WEB": "www.imerys.com",
+    "Descripcion": "Miscellaneous Nonmetallic Minerals, Except Fuels"
   },
   {
     "OPER_NAME": "Consorcio Minero Benito Juarez Pena Colorada SA de CV",
@@ -400,7 +430,8 @@
     "Direccion": "Avenida del Trabajo 1000 Colonia Tapeixles",
     "Ciudad": "Manzanillo",
     "Estado": "Colima",
-    "WEB": "www.techint.com"
+    "WEB": "www.techint.com",
+    "Descripcion": "Iron Ores Mining"
   },
   {
     "OPER_NAME": "Koura Global",
@@ -413,7 +444,8 @@
     "Direccion": "Mina La Salitrera S/N. 70 Kilometers South East San Luis Pot",
     "Ciudad": "Zaragoza",
     "Estado": "San Luis Potosi",
-    "WEB": "www.orbia.com"
+    "WEB": "www.orbia.com",
+    "Descripcion": "Chemical & Fertilizer Mineral Mining"
   },
   {
     "OPER_NAME": "Refinadora Plata Guanacevi SA de CV",
@@ -426,7 +458,8 @@
     "Direccion": "Domicilio Conocido Guanacevi",
     "Ciudad": "Guanacevi",
     "Estado": "Durango",
-    "WEB": "www.edrsilver.com"
+    "WEB": "www.edrsilver.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Rofomex SA de CV",
@@ -439,7 +472,8 @@
     "Direccion": "Domicilio Conocido Zona Industrial",
     "Ciudad": "La Paz",
     "Estado": "Baja California Del Sur",
-    "WEB": "www.pemex.com"
+    "WEB": "www.pemex.com",
+    "Descripcion": "Phosphate Rock"
   },
   {
     "OPER_NAME": "Minera Frisco SAB de CV",
@@ -452,7 +486,8 @@
     "Direccion": "Carretera Chihuahua Hermosillo Km 280",
     "Ciudad": "Ocampo",
     "Estado": "Chihuahua",
-    "WEB": "www.minerafrisco.com.mx"
+    "WEB": "www.minerafrisco.com.mx",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera San Francisco Del Oro SA de CV",
@@ -465,7 +500,8 @@
     "Direccion": "Domicilio Conocido Fraccionamiento San Francisco Del Oro",
     "Ciudad": "San Francisco Del Oro",
     "Estado": "Chihuahua",
-    "WEB": "www.minerafrisco.com.mx"
+    "WEB": "www.minerafrisco.com.mx",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "ArcelorMittal Lazaro Cardenas SA de CV",
@@ -478,7 +514,8 @@
     "Direccion": "2km from La Mira, 27km from Complejo Siderurgico Las Truchas",
     "Ciudad": "Lazaro Cardenas",
     "Estado": "Michoacan",
-    "WEB": "corporate.arcelormittal.com"
+    "WEB": "corporate.arcelormittal.com",
+    "Descripcion": "Iron Ores Mining"
   },
   {
     "OPER_NAME": "Caleras De La Laguna SA de CV",
@@ -491,7 +528,8 @@
     "Direccion": "Avenida 4ta y Calle 16",
     "Ciudad": "Torreon",
     "Estado": "Coahuila",
-    "WEB": "www.calidra.com"
+    "WEB": "www.calidra.com",
+    "Descripcion": "Lime"
   },
   {
     "OPER_NAME": "Caleras Bertran SA de CV",
@@ -504,7 +542,8 @@
     "Direccion": "Carretera Atotonilco - Progreso s/n",
     "Ciudad": "Antotonilco de Tula",
     "Estado": "Hidalgo",
-    "WEB": "www.cegimsa.com.mx"
+    "WEB": "www.cegimsa.com.mx",
+    "Descripcion": "Crushed & Broken Limestone"
   },
   {
     "OPER_NAME": "Industrias Penoles SAB de CV",
@@ -517,7 +556,8 @@
     "Direccion": "50 km Southeast from Heroica Nogales",
     "Ciudad": "Santa Cruz",
     "Estado": "Sonora",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Agnico-Eagle Mexico SA de CV",
@@ -530,7 +570,8 @@
     "Direccion": "200 Km East from Hermosillo",
     "Ciudad": "Tarachi",
     "Estado": "Sonora",
-    "WEB": "www.agnicoeagle.com"
+    "WEB": "www.agnicoeagle.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Goldgroup Mining Incorporated",
@@ -543,7 +584,8 @@
     "Direccion": "14 Km Noth of Cucurpe City",
     "Ciudad": "Cucurpe",
     "Estado": "Sonora",
-    "WEB": "https://goldgroupmining.com/"
+    "WEB": "https://goldgroupmining.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Guanajuato Silver Company Limited",
@@ -556,7 +598,8 @@
     "Direccion": "6 Km Northwest of Guanajuato",
     "Ciudad": "Guanajuato",
     "Estado": "Guanajuato",
-    "WEB": "www.gsilver.com"
+    "WEB": "www.gsilver.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Desarrollos Mineros San Luis SA de CV",
@@ -569,7 +612,8 @@
     "Direccion": "10 Km South West Mezcala",
     "Ciudad": "Mezcala",
     "Estado": "Guerrero",
-    "WEB": "https://www.equinoxgold.com/"
+    "WEB": "https://www.equinoxgold.com/",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Plata Panamericana SA de CV",
@@ -582,7 +626,8 @@
     "Direccion": "Domicilio Conocido La Colorada",
     "Ciudad": "Chalchihuites",
     "Estado": "Zacatecas",
-    "WEB": "www.panamericansilver.com"
+    "WEB": "www.panamericansilver.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Aranzazu Holding SA de CV",
@@ -595,7 +640,8 @@
     "Direccion": "1 kilometer Southwest Concepcion del Oro",
     "Ciudad": "Concepcion Del Oro",
     "Estado": "Zacatecas",
-    "WEB": "www.auraminerals.com"
+    "WEB": "www.auraminerals.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Minera Oro Silver de Mexico SA de CV",
@@ -608,7 +654,8 @@
     "Direccion": "5 Kilometers North Zacatecas City",
     "Ciudad": "Zacatecas",
     "Estado": "Zacatecas",
-    "WEB": "www.gruporosgo.com"
+    "WEB": "www.gruporosgo.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera Autlan SA de CV",
@@ -621,7 +668,8 @@
     "Direccion": "Km 162 Casetas Carretera Mexico-Tampico",
     "Ciudad": "Molango De Escamilla",
     "Estado": "Hidalgo",
-    "WEB": "www.autlan.com.mx"
+    "WEB": "www.autlan.com.mx",
+    "Descripcion": "Ferroalloy Ores Mining, Except Vanadium"
   },
   {
     "OPER_NAME": "Cemex Agregados SA de CV",
@@ -634,7 +682,8 @@
     "Direccion": "Coayuca",
     "Ciudad": "Tula De Allende",
     "Estado": "Hidalgo",
-    "WEB": "www.cemex.com"
+    "WEB": "www.cemex.com",
+    "Descripcion": "Construction Sand & Gravel"
   },
   {
     "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
@@ -647,7 +696,8 @@
     "Direccion": "Ex Hacienda de Bustos sin numero",
     "Ciudad": "Guanajuato",
     "Estado": "Guanajuato",
-    "WEB": "www.gsilver.com"
+    "WEB": "www.gsilver.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Tizapa SA de CV",
@@ -660,7 +710,8 @@
     "Direccion": "5 Kilometers Southeast Zacazonapan",
     "Ciudad": "Zacazonapan",
     "Estado": "Mexico",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Minera Fresnillo SA de CV",
@@ -673,7 +724,8 @@
     "Direccion": "Prolongacion Avenida Hidalgo 451 Colonia Centro",
     "Ciudad": "Fresnillo",
     "Estado": "Zacatecas",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minas de Oro Nacional SA de CV",
@@ -686,7 +738,8 @@
     "Direccion": "220 Kilometers South East Hermosillo",
     "Ciudad": "Mulatos",
     "Estado": "Sonora",
-    "WEB": "http://www.alamosgold.com"
+    "WEB": "http://www.alamosgold.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Agregados y Bloques Cancun SA de CV",
@@ -699,7 +752,8 @@
     "Direccion": "Carretera Merida-Puerto Juarez Km 309 Region 105",
     "Ciudad": "Cancun",
     "Estado": "Quintana Roo",
-    "WEB": "www.abc-cancun.com"
+    "WEB": "www.abc-cancun.com",
+    "Descripcion": "Cut Stone & Stone Products"
   },
   {
     "OPER_NAME": "Industrial Minera Mexico SA de CV",
@@ -712,7 +766,8 @@
     "Direccion": "Hacienda Tecolotes S/N",
     "Ciudad": "Santa Barbara",
     "Estado": "Chihuahua",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Ternium Las Encinas SA de CV",
@@ -725,7 +780,8 @@
     "Direccion": "Aquila Mine Site",
     "Ciudad": "Aquila",
     "Estado": "Michoacan",
-    "WEB": "www.techint.com"
+    "WEB": "www.techint.com",
+    "Descripcion": "Iron Ores Mining"
   },
   {
     "OPER_NAME": "Buenavista del Cobre SA de CV",
@@ -738,7 +794,8 @@
     "Direccion": "Avenida Juarez 4",
     "Ciudad": "Cananea",
     "Estado": "Sonora",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Compania de Real Del Monte y Pachuca SA de CV",
@@ -751,7 +808,8 @@
     "Direccion": "Prolongacion Venustiano Carranza 101 Colonia San Juan Pachuc",
     "Ciudad": "Pachuca De Soto",
     "Estado": "Hidalgo",
-    "WEB": "www.ahmsa.com"
+    "WEB": "www.ahmsa.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Dia Bras Mexicana SA de CV",
@@ -764,7 +822,8 @@
     "Direccion": "15 km Southwest of Urique",
     "Ciudad": "Chihuahua",
     "Estado": "Chihuahua",
-    "WEB": "www.sierrametals.com"
+    "WEB": "www.sierrametals.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Endeavour Silver Corporation SA de CV",
@@ -777,7 +836,8 @@
     "Direccion": "10 Kilometers North West Guanajuato, Carretera a Cristo Rey",
     "Ciudad": "Guanajuato",
     "Estado": "Guanajuato",
-    "WEB": "www.edrsilver.com"
+    "WEB": "www.edrsilver.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Industrial Minera Mexico SA de CV",
@@ -790,7 +850,8 @@
     "Direccion": "Domicilio Conocido s/n Rancheria San Martin",
     "Ciudad": "Sombrerete",
     "Estado": "Zacatecas",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Cobre Del Mayo SA de CV",
@@ -803,7 +864,8 @@
     "Direccion": "16 Kilometers North West of Alamos",
     "Ciudad": "Alamos",
     "Estado": "Sonora",
-    "WEB": "www.fronteracopper.com"
+    "WEB": "www.fronteracopper.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Minera Saucito SA de CV",
@@ -816,7 +878,8 @@
     "Direccion": "10 Kilometers South West Fresnillo",
     "Ciudad": "Fresnillo",
     "Estado": "Zacatecas",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Alamos de Sonora SA de CV",
@@ -829,7 +892,8 @@
     "Direccion": "50 km SW of Alamos",
     "Ciudad": "Curea",
     "Estado": "Sonora",
-    "WEB": "www.mineraalamos.com"
+    "WEB": "www.mineraalamos.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Calizas Industriales del Carmen SA",
@@ -842,7 +906,8 @@
     "Direccion": "Km 282.6 Carretera Federal Chetumal",
     "Ciudad": "Cozumel",
     "Estado": "Quintana Roo",
-    "WEB": "www.vulcanmaterials.com"
+    "WEB": "www.vulcanmaterials.com",
+    "Descripcion": "Crushed & Broken Limestone"
   },
   {
     "OPER_NAME": "Sales del Istmo SA de CV",
@@ -855,7 +920,8 @@
     "Direccion": "Complejo Industrial Pajaritos SN",
     "Ciudad": "Coatzacoalcos",
     "Estado": "Veracruz",
-    "WEB": "www.cydsa.com"
+    "WEB": "www.cydsa.com",
+    "Descripcion": "Chemical & Fertilizer Mineral Mining"
   },
   {
     "OPER_NAME": "Cemex Agregados SA de CV",
@@ -868,7 +934,8 @@
     "Direccion": "Cantera Palma Domicilio Conocido",
     "Ciudad": "Tula De Allende",
     "Estado": "Hidalgo",
-    "WEB": "www.cemex.com"
+    "WEB": "www.cemex.com",
+    "Descripcion": "Construction Sand & Gravel"
   },
   {
     "OPER_NAME": "Covia Mexico",
@@ -881,7 +948,8 @@
     "Direccion": "Carretera Sayula-Ciudad Aleman Km 12.5",
     "Ciudad": "San Juan Evangelista",
     "Estado": "Veracruz",
-    "WEB": "https://www.coviacorp.com/"
+    "WEB": "https://www.coviacorp.com/",
+    "Descripcion": "Industrial Sand"
   },
   {
     "OPER_NAME": "Minera Pena de Bernal SA de CV",
@@ -894,7 +962,8 @@
     "Direccion": "San Martin Domicilio Conocido",
     "Ciudad": "Colon",
     "Estado": "Queretaro",
-    "WEB": "www.starcore.com"
+    "WEB": "www.starcore.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera La Encantada SA de CV",
@@ -907,7 +976,8 @@
     "Direccion": "200 Kilometers North West Monclova City",
     "Ciudad": "Muzquiz",
     "Estado": "Coahuila",
-    "WEB": "https://www.firstmajestic.com/"
+    "WEB": "https://www.firstmajestic.com/",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Calidra de Oriente SA de CV",
@@ -920,7 +990,8 @@
     "Direccion": "Ex-hacienda de San Martin La Joya s/n",
     "Ciudad": "Acajete",
     "Estado": "Puebla",
-    "WEB": "www.calidra.com"
+    "WEB": "www.calidra.com",
+    "Descripcion": "Crushed & Broken Limestone"
   },
   {
     "OPER_NAME": "Real de la Bufa SA de CV",
@@ -933,7 +1004,8 @@
     "Direccion": "26 Kilometers North West Topia",
     "Ciudad": "Topia",
     "Estado": "Durango",
-    "WEB": "www.lucamining.com"
+    "WEB": "www.lucamining.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Penasquito SA de CV",
@@ -946,7 +1018,8 @@
     "Direccion": "Domicilio Conocido Municipio de Mazapil",
     "Ciudad": "Concepcion Del Oro",
     "Estado": "Zacatecas",
-    "WEB": "www.newmont.com"
+    "WEB": "www.newmont.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Mexicana de Cobre SA de CV",
@@ -959,7 +1032,8 @@
     "Direccion": "Carretera Nacozari-Agua Prieta Km 21",
     "Ciudad": "Nacozari De Garcia",
     "Estado": "Sonora",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Minera Penmont S de RL de CV",
@@ -972,7 +1046,8 @@
     "Direccion": "Carretera Puerto Penasco Km 47",
     "Ciudad": "Puerto Penasco",
     "Estado": "Sonora",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Minera Mexicana La Cienega SA de CV",
@@ -982,10 +1057,11 @@
     "Quarry": "no",
     "LATITUDE": 25.046637,
     "LONGITUDE": -106.344083,
-    "Direccion": "Domicilio Conocido Cienega de Nuestra Senora",
+    "Direccion": "Domicilio Conocido Cienega de Nuestra Senora S/N",
     "Ciudad": "Santiago Papasquiaro",
     "Estado": "Durango",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Capela SA de CV",
@@ -998,7 +1074,8 @@
     "Direccion": "18 Kilometers North West Teloloapan",
     "Ciudad": "Teloloapan",
     "Estado": "Guerrero",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Agnico-Eagle Mexico SA de CV",
@@ -1011,7 +1088,8 @@
     "Direccion": "10 Km NW of Cahuizori",
     "Ciudad": "Pino Altos",
     "Estado": "Chihuahua",
-    "WEB": "www.agnicoeagle.com"
+    "WEB": "www.agnicoeagle.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Carrizal Mining SA de CV",
@@ -1024,7 +1102,8 @@
     "Direccion": "9.6 km Northwest from Zimapan",
     "Ciudad": "Zimapan",
     "Estado": "Hidalgo",
-    "WEB": "https://santacruzsilver.com/"
+    "WEB": "https://santacruzsilver.com/",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Carrizal Mining SA de CV",
@@ -1037,7 +1116,8 @@
     "Direccion": "Mexico 85",
     "Ciudad": "Zimapan",
     "Estado": "Hidalgo",
-    "WEB": "https://santacruzsilver.com/"
+    "WEB": "https://santacruzsilver.com/",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Coanzamex SA de CV",
@@ -1050,7 +1130,8 @@
     "Direccion": "200 Kilometers South East Chihuahua",
     "Ciudad": "Hidalgo Del Parral",
     "Estado": "Chihuahua",
-    "WEB": "www.gogoldresources.com"
+    "WEB": "www.gogoldresources.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Cemex Mexico SA de CV",
@@ -1063,7 +1144,8 @@
     "Direccion": "Carretera Merida-Uman Km 6, Colonia Ciudad Industrial",
     "Ciudad": "Merida",
     "Estado": "Yucatan",
-    "WEB": "www.cemex.com"
+    "WEB": "www.cemex.com",
+    "Descripcion": "Cement, Hydraulic"
   },
   {
     "OPER_NAME": "Compania Minera Caopas SA de CV",
@@ -1076,7 +1158,8 @@
     "Direccion": "Carretera Transpeninsular Km 9+400",
     "Ciudad": "Mulege",
     "Estado": "Baja California Del Sur",
-    "WEB": "www.caopas.net"
+    "WEB": "www.caopas.net",
+    "Descripcion": "Miscellaneous Nonmetallic Minerals, Except Fuels"
   },
   {
     "OPER_NAME": "Silice del Istmo SA de CV",
@@ -1089,7 +1172,8 @@
     "Direccion": "Km 10 Carretera Sayula-San Juan Evangelista",
     "Ciudad": "Acayucan",
     "Estado": "Veracruz",
-    "WEB": "www.crowncork.com"
+    "WEB": "www.crowncork.com",
+    "Descripcion": "Industrial Sand"
   },
   {
     "OPER_NAME": "Capstone Gold SA de CV",
@@ -1102,7 +1186,8 @@
     "Direccion": "Cerro de San Roberto S/N Ejido Hacienda Nueva",
     "Ciudad": "Morelos",
     "Estado": "Zacatecas",
-    "WEB": "www.capstonecopper.com"
+    "WEB": "www.capstonecopper.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Coeur Mexicana SA de CV",
@@ -1115,7 +1200,8 @@
     "Direccion": "15Km Northwest of Temoris",
     "Ciudad": "Temosachi",
     "Estado": "Chihuahua",
-    "WEB": "www.coeur.com"
+    "WEB": "www.coeur.com",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera Sabinas SA de CV",
@@ -1128,7 +1214,8 @@
     "Direccion": "155 Kilometres North West Zacatecas City",
     "Ciudad": "Sombrerete",
     "Estado": "Zacatecas",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Industrial Minera Mexico SA de CV",
@@ -1141,7 +1228,8 @@
     "Direccion": "Calle Mina Tiro General s/n",
     "Ciudad": "Charcas",
     "Estado": "San Luis Potosi",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Copper Ores Mining"
   },
   {
     "OPER_NAME": "Calidra de Occidente SA de CV",
@@ -1154,7 +1242,8 @@
     "Direccion": "Avenida Jose Miguel Fernandez N� 1",
     "Ciudad": "Zapotiltic",
     "Estado": "Jalisco",
-    "WEB": "www.calidra.com"
+    "WEB": "www.calidra.com",
+    "Descripcion": "Crushed & Broken Limestone"
   },
   {
     "OPER_NAME": "Ternium Las Encinas SA de CV",
@@ -1167,7 +1256,8 @@
     "Direccion": "Domicilio Conocido S/N Estacion la Alzada",
     "Ciudad": "Cuauhtemoc",
     "Estado": "Colima",
-    "WEB": "www.techint.com"
+    "WEB": "www.techint.com",
+    "Descripcion": "Iron Ores Mining"
   },
   {
     "OPER_NAME": "Fresnillo Plc",
@@ -1180,7 +1270,8 @@
     "Direccion": "8 Km South West Fresnillo",
     "Ciudad": "Fresnillo",
     "Estado": "Zacatecas",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Silver Ores Mining"
   },
   {
     "OPER_NAME": "Minera Roble SA De CV",
@@ -1193,7 +1284,8 @@
     "Direccion": "Calle Domicilio Conocido S/N",
     "Ciudad": "Cuencame",
     "Estado": "Durango",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Lead & Zinc Ores Mining"
   },
   {
     "OPER_NAME": "Minera Penmont S de RL de CV",
@@ -1206,7 +1298,8 @@
     "Direccion": "83 km North West from Caborca",
     "Ciudad": "Caborca",
     "Estado": "Sonora",
-    "WEB": "www.penoles.com.mx"
+    "WEB": "www.penoles.com.mx",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Compania Minera Dolores SA de CV",
@@ -1219,7 +1312,8 @@
     "Direccion": "250 Km West of Chihuahua City",
     "Ciudad": "Dolores",
     "Estado": "Chihuahua",
-    "WEB": "www.panamericansilver.com"
+    "WEB": "www.panamericansilver.com",
+    "Descripcion": "Gold Ores Mining"
   },
   {
     "OPER_NAME": "Grupo Mexico SAB de CV",
@@ -1232,7 +1326,7 @@
     "Direccion": "6 Km West of La Caridad Mine, 10 Km SE of Nacozari",
     "Ciudad": "Nacozari De Garcia",
     "Estado": "Sonora",
-    "WEB": "www.gmexico.com"
+    "WEB": "www.gmexico.com",
+    "Descripcion": "Copper Ores Mining"
   }
-  
 ]

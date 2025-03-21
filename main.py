@@ -254,7 +254,7 @@ if st.session_state.password_correct:
         with col3:
             quarry = st.checkbox("Quarry 🟦", value=True, key="quarry")
         with col4:
-            both = st.checkbox("Surface & Underground 🟪", value=True, key="both")
+            both = st.checkbox("Surf & Und 🟪", value=True, key="both")
         
         st.divider()
 
@@ -302,8 +302,9 @@ if st.session_state.password_correct:
                 st.sidebar.write(f"### {planta.get('PLANT_NAME', 'N/A')}")
                 st.sidebar.write(f"**Operador:** {planta.get('OPER_NAME', 'N/A')}")
                 st.sidebar.write(f"**Dirección:** {planta.get('Direccion', 'N/A')}")
-                st.sidebar.write(f"**Ciudad:** {planta.get('Ciudad', 'N/A')}")
+                st.sidebar.write(f"**Ciudad / Localidad:** {planta.get('Ciudad', 'N/A')}")
                 st.sidebar.write(f"**Estado:** {planta.get('Estado', 'N/A')}")
+                st.sidebar.write(f"**Descripción:** {planta.get('Descripcion', 'N/A')}")
                 st.sidebar.write(f"**Web:** {planta.get('WEB', 'N/A')}")
                 st.sidebar.divider()
         else:
