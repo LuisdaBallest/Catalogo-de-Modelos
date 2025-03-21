@@ -257,7 +257,7 @@ if st.session_state.password_correct:
                     location=[planta['LATITUDE'], planta['LONGITUDE']],
                     popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})",
                     tooltip=planta['PLANT_NAME'],
-                    icon=folium.Icon(color='brown' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'gray', icon="person-digging", prefix='fa')
+                    icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue', icon="person-digging", prefix='fa')
                 ).add_to(m)
 
             # Mostrar el mapa en Streamlit
