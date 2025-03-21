@@ -285,7 +285,9 @@ if st.session_state.password_correct:
             st_folium(m, use_container_width=True, zoom=5)
 
             # Mostrar detalles de todas las plantas filtradas en el sidebar
-            st.sidebar.title("Detalles de las plantas mostradas en el mapa")
+            st.sidebar.title("Plantas mostradas en el mapa")
+            st.sidebar.write(f"**Número de plantas:** {len(filtered_plantas)}")
+            st.sidebar.divider()
             for planta in filtered_plantas:
                 st.sidebar.write(f"### {planta.get('PLANT_NAME', 'N/A')}")
                 st.sidebar.write(f"**Operador:** {planta.get('OPER_NAME', 'N/A')}")
