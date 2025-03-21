@@ -294,21 +294,17 @@ if st.session_state.password_correct:
             # Mostrar el mapa en Streamlit
             map_data = st_folium(m, use_container_width=True, zoom=5)
 
-            # Mostrar detalles de la planta seleccionada en el sidebar
-            if map_data and map_data['last_clicked']:
-                last_clicked = map_data['last_clicked']
-                for planta in filtered_plantas:
-                    if planta['LATITUDE'] == last_clicked['lat'] and planta['LONGITUDE'] == last_clicked['lng']:
-                        st.session_state.selected_planta = planta
-                        break
-
-            if st.session_state.selected_planta is not None:
-                selected_planta = st.session_state.selected_planta
-                st.sidebar.title(f"Detalles de la planta: {selected_planta['PLANT_NAME']}")
-                st.sidebar.write(f"**Operador:** {selected_planta['OPER_NAME']}")
-                st.sidebar.write(f"**Dirección:** {selected_planta['Direccion']}")
-                st.sidebar.write(f"**Ciudad:** {selected_planta['Ciudad']}")
-                st.sidebar.write(f"**Estado:** {selected_planta['Estado']}")
-                st.sidebar.write(f"**Web:** {selected_planta['WEB']}")
+            # Mostrar detalles de todas las plantas filtradas en el sidebar
+            st.sidebar.title("Plantas mostradas en el mapa")
+            st.sidebar.write(f"**Número de plantas:** {len(filtered_plantas)}")
+            st.sidebar.divider()
+            for planta in filtered_plantas:
+                st.sidebar.write(f"### {planta.get('PLANT_NAME', 'N/A')}")
+                st.sidebar.write(f"**Operador:** {planta.get('OPER_NAME', 'N/A')}")
+                st.sidebar.write(f"**Dirección:** {planta.get('Direccion', 'N/A')}")
+                st.sidebar.write(f"**Ciudad:** {planta.get('Ciudad', 'N/A')}")
+                st.sidebar.write(f"**Estado:** {planta.get('Estado', 'N/A')}")
+                st.sidebar.write(f"**Web:** {planta.get('WEB', 'N/A')}")
+                st.sidebar.divider()
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
