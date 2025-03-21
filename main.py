@@ -16,7 +16,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
-        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
@@ -260,6 +260,10 @@ if st.session_state.password_correct:
                (st.session_state.quarry and planta['Quarry'] == 'si')
         ]
 
+        # Verificar las claves de las plantas
+        for planta in filtered_plantas:
+            st.write(planta)  # Imprimir los datos de la planta para verificar las claves
+
         # Crear el mapa
         if filtered_plantas:
             m = folium.Map(
@@ -293,6 +297,6 @@ if st.session_state.password_correct:
                 st.sidebar.write(f"**Ciudad:** {planta.get('Ciudad', 'N/A')}")
                 st.sidebar.write(f"**Estado:** {planta.get('Estado', 'N/A')}")
                 st.sidebar.write(f"**Web:** {planta.get('WEB', 'N/A')}")
-                st.divider()
+                st.sidebar.divider()
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
