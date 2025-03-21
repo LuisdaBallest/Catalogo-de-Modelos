@@ -244,11 +244,11 @@ if st.session_state.password_correct:
         # Filtros para las plantas
         col1, col2, col3 = st.columns(3)
         with col1:
-            surface = st.checkbox("Surface", value=True, key="surface")
+            surface = st.checkbox("Surface 🟩", value=True, key="surface")
         with col2:
-            underground = st.checkbox("Underground", value=True, key="underground")
+            underground = st.checkbox("Underground 🟥", value=True, key="underground")
         with col3:
-            quarry = st.checkbox("Quarry", value=True, key="quarry")
+            quarry = st.checkbox("Quarry 🟦", value=True, key="quarry")
         
         st.divider()
 
@@ -259,10 +259,6 @@ if st.session_state.password_correct:
                (st.session_state.underground and planta['Underground'] == 'si') or
                (st.session_state.quarry and planta['Quarry'] == 'si')
         ]
-
-        # Verificar las claves de las plantas
-        for planta in filtered_plantas:
-            st.write(planta)  # Imprimir los datos de la planta para verificar las claves
 
         # Crear el mapa
         if filtered_plantas:
