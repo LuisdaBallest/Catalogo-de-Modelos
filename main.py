@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import folium
 from streamlit_folium import st_folium
 from PIL import Image, UnidentifiedImageError
@@ -229,32 +228,32 @@ if st.session_state.password_correct:
         with open('Plantas.json') as f:
             plantas_data = json.load(f)
 
-        # Convertir datos a DataFrame
-        df_plantas = pd.DataFrame(plantas_data)
-
         # Filtros para las plantas
         surface = st.checkbox("Surface", value=True)
         underground = st.checkbox("Underground", value=True)
         quarry = st.checkbox("Quarry", value=True)
 
-        # Filtrar el DataFrame en función de las selecciones del usuario
-        if surface:
-            df_plantas = df_plantas[df_plantas['Surface'] == 'si']
-        if underground:
-            df_plantas = df_plantas[df_plantas['Underground'] == 'si']
-        if quarry:
-            df_plantas = df_plantas[df_plantas['Quarry'] == 'si']
+        # Filtrar los datos en función de las selecciones del usuario
+        filtered_plantas = [
+            planta for planta in plantas_data
+            if (surface and planta['Surface'] == 'si') or
+               (underground and planta['Underground'] == 'si') or
+               (quarry and planta['Quarry'] == 'si')
+        ]
 
         # Crear el mapa
-        m = folium.Map(location=[df_plantas['LATITUDE'].mean(), df_plantas['LONGITUDE'].mean()], zoom_start=5)
+        if filtered_plantas:
+            m = folium.Map(location=[filtered_plantas[0]['LATITUDE'], filtered_plantas[0]['LONGITUDE']], zoom_start=5)
 
-        # Añadir marcadores al mapa
-        for _, row in df_plantas.iterrows():
-            folium.Marker(
-                location=[row['LATITUDE'], row['LONGITUDE']],
-                popup=f"{row['PLANT_NAME']} ({row['OPER_NAME']})",
-                tooltip=row['PLANT_NAME']
-            ).add_to(m)
+            # Añadir marcadores al mapa
+            for planta in filtered_plantas:
+                folium.Marker(
+                    location=[planta['LATITUDE'], planta['LONGITUDE']],
+                    popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})",
+                    tooltip=planta['PLANT_NAME']
+                ).add_to(m)
 
-        # Mostrar el mapa en Streamlit
-        st_folium(m, width=700, height=500)
+            # Mostrar el mapa en Streamlit
+            st_folium(m, width=700, height=500)
+        else:
+            st.write("No hay plantas que coincidan con los filtros seleccionados.")
