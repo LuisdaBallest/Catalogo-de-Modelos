@@ -235,10 +235,6 @@ if st.session_state.password_correct:
         with open('Plantas.json') as f:
             return json.load(f)
 
-    # Inicializar la variable de estado para la planta seleccionada
-    if 'selected_planta' not in st.session_state:
-        st.session_state.selected_planta = None
-
     with tab2:
         # Cargar datos del archivo JSON
         plantas_data = load_plantas_data()
@@ -297,6 +293,6 @@ if st.session_state.password_correct:
                 st.sidebar.write(f"**Ciudad:** {planta['Ciudad']}")
                 st.sidebar.write(f"**Estado:** {planta['Estado']}")
                 st.sidebar.write(f"**Web:** {planta['WEB']}")
-                st.sidebar.write("---")
+                st.divider()
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
