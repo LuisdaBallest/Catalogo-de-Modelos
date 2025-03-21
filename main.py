@@ -283,9 +283,16 @@ if st.session_state.password_correct:
                 ).add_to(m).add_child(folium.ClickForMarker(popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})"))
 
             # Mostrar el mapa en Streamlit
-            st_folium(m, use_container_width=True)
+            map_data = st_folium(m, use_container_width=True, zoom=5)
 
             # Mostrar detalles de la planta seleccionada en el sidebar
+            if map_data and map_data['last_object_clicked']:
+                last_clicked = map_data['last_object_clicked']
+                for planta in filtered_plantas:
+                    if planta['LATITUDE'] == last_clicked['lat'] and planta['LONGITUDE'] == last_clicked['lng']:
+                        st.session_state.selected_planta = planta
+                        break
+
             if st.session_state.selected_planta is not None:
                 selected_planta = st.session_state.selected_planta
                 st.sidebar.title(f"Detalles de la planta: {selected_planta['PLANT_NAME']}")
