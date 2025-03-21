@@ -244,7 +244,7 @@ if st.session_state.password_correct:
 
         # Crear el mapa
         if filtered_plantas:
-            m = folium.Map(location=[filtered_plantas[0]['LATITUDE'], filtered_plantas[0]['LONGITUDE']], zoom_start=5)
+            m = folium.Map(location=[filtered_plantas[0]['LATITUDE'], filtered_plantas[0]['LONGITUDE']], zoom_start=5, tiles='Stamen Terrain')
 
             # Añadir marcadores al mapa
             for planta in filtered_plantas:
