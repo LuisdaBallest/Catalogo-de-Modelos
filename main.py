@@ -235,6 +235,10 @@ if st.session_state.password_correct:
         with open('Plantas.json') as f:
             return json.load(f)
 
+    # Inicializar la variable de estado para la planta seleccionada
+    if 'selected_planta' not in st.session_state:
+        st.session_state.selected_planta = None
+
     with tab2:
         # Cargar datos del archivo JSON
         plantas_data = load_plantas_data()
@@ -242,13 +246,15 @@ if st.session_state.password_correct:
         st.title("Plantas Mineras en México")
         st.divider()
         # Filtros para las plantas
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
         with col1:
             surface = st.checkbox("Surface 🟩", value=True, key="surface")
         with col2:
             underground = st.checkbox("Underground 🟥", value=True, key="underground")
         with col3:
             quarry = st.checkbox("Quarry 🟦", value=True, key="quarry")
+        with col4:
+            both = st.checkbox("Surface & Underground 🟪", value=True, key="both")
         
         st.divider()
 
@@ -258,7 +264,7 @@ if st.session_state.password_correct:
             if (st.session_state.surface and planta['Surface'] == 'si') or
                (st.session_state.underground and planta['Underground'] == 'si') or
                (st.session_state.quarry and planta['Quarry'] == 'si') or
-               (st.session_state.underground_surface and planta['Underground'] == 'si' and planta['Surface'] == 'si')
+               (st.session_state.both and planta['Surface'] == 'si' and planta['Underground'] == 'si')
         ]
 
         # Crear el mapa
@@ -272,30 +278,37 @@ if st.session_state.password_correct:
 
             # Añadir marcadores al mapa
             for idx, planta in enumerate(filtered_plantas):
+                color = 'green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue'
+                if planta['Surface'] == 'si' and planta['Underground'] == 'si':
+                    color = 'purple'
                 folium.Marker(
                     location=[planta['LATITUDE'], planta['LONGITUDE']],
                     popup=folium.Popup(f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})", parse_html=True),
                     tooltip=planta['PLANT_NAME'],
-                    icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue', icon="person-digging", prefix='fa')
+                    icon=folium.Icon(color=color, icon="person-digging", prefix='fa')
                 ).add_to(m)
 
             # Añadir LatLngPopup al mapa
             folium.LatLngPopup().add_to(m)
 
             # Mostrar el mapa en Streamlit
-            st_folium(m, use_container_width=True, zoom=5)
+            map_data = st_folium(m, use_container_width=True, zoom=5)
 
-            # Mostrar detalles de todas las plantas filtradas en el sidebar
-            st.sidebar.title("Plantas mostradas en el mapa")
-            st.sidebar.write(f"**Número de plantas:** {len(filtered_plantas)}")
-            st.sidebar.divider()
-            for planta in filtered_plantas:
-                st.sidebar.write(f"### {planta.get('PLANT_NAME', 'N/A')}")
-                st.sidebar.write(f"**Operador:** {planta.get('OPER_NAME', 'N/A')}")
-                st.sidebar.write(f"**Dirección:** {planta.get('Direccion', 'N/A')}")
-                st.sidebar.write(f"**Ciudad:** {planta.get('Ciudad', 'N/A')}")
-                st.sidebar.write(f"**Estado:** {planta.get('Estado', 'N/A')}")
-                st.sidebar.write(f"**Web:** {planta.get('WEB', 'N/A')}")
-                st.sidebar.divider()
+            # Mostrar detalles de la planta seleccionada en el sidebar
+            if map_data and map_data['last_clicked']:
+                last_clicked = map_data['last_clicked']
+                for planta in filtered_plantas:
+                    if planta['LATITUDE'] == last_clicked['lat'] and planta['LONGITUDE'] == last_clicked['lng']:
+                        st.session_state.selected_planta = planta
+                        break
+
+            if st.session_state.selected_planta is not None:
+                selected_planta = st.session_state.selected_planta
+                st.sidebar.title(f"Detalles de la planta: {selected_planta['PLANT_NAME']}")
+                st.sidebar.write(f"**Operador:** {selected_planta['OPER_NAME']}")
+                st.sidebar.write(f"**Dirección:** {selected_planta['Direccion']}")
+                st.sidebar.write(f"**Ciudad:** {selected_planta['Ciudad']}")
+                st.sidebar.write(f"**Estado:** {selected_planta['Estado']}")
+                st.sidebar.write(f"**Web:** {selected_planta['WEB']}")
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
