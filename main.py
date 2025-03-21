@@ -16,7 +16,7 @@ if not st.session_state.password_correct:
     password = st.text_input("Introduce la contraseña:", type="password")
     if password == st.secrets["PASSWORD-0"]:
         st.session_state.password_correct = True
-        st.experimental_rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
+        st.rerun()  # Recargar la aplicación para ocultar el campo de entrada de la contraseña
     elif password:
         st.error("Contraseña incorrecta")
 
@@ -235,6 +235,10 @@ if st.session_state.password_correct:
         with open('Plantas.json') as f:
             return json.load(f)
 
+    # Inicializar la variable de estado para la planta seleccionada
+    if 'selected_planta' not in st.session_state:
+        st.session_state.selected_planta = None
+
     with tab2:
         # Cargar datos del archivo JSON
         plantas_data = load_plantas_data()
@@ -270,15 +274,25 @@ if st.session_state.password_correct:
             )
 
             # Añadir marcadores al mapa
-            for planta in filtered_plantas:
+            for idx, planta in enumerate(filtered_plantas):
                 folium.Marker(
                     location=[planta['LATITUDE'], planta['LONGITUDE']],
-                    popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})",
+                    popup=folium.Popup(f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})", parse_html=True),
                     tooltip=planta['PLANT_NAME'],
                     icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue', icon="person-digging", prefix='fa')
-                ).add_to(m)
+                ).add_to(m).add_child(folium.ClickForMarker(popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})"))
 
             # Mostrar el mapa en Streamlit
             st_folium(m, use_container_width=True)
+
+            # Mostrar detalles de la planta seleccionada en el sidebar
+            if st.session_state.selected_planta is not None:
+                selected_planta = st.session_state.selected_planta
+                st.sidebar.title(f"Detalles de la planta: {selected_planta['PLANT_NAME']}")
+                st.sidebar.write(f"**Operador:** {selected_planta['OPER_NAME']}")
+                st.sidebar.write(f"**Dirección:** {selected_planta['Direccion']}")
+                st.sidebar.write(f"**Ciudad:** {selected_planta['Ciudad']}")
+                st.sidebar.write(f"**Estado:** {selected_planta['Estado']}")
+                st.sidebar.write(f"**Web:** {selected_planta['WEB']}")
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")

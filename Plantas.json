@@ -6,7 +6,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 18.012843,
-    "LONGITUDE": -99.745869
+    "LONGITUDE": -99.745869,
+    "Direccion": "56 Kilometers North West Chilpancingo De Los Bravo",
+    "Ciudad": "El Limon",
+    "Estado": "Guerrero",
+    "WEB": "https://torexgold.com/"
   },
   {
     "OPER_NAME": "Mexicana de Cobre SA de CV",
@@ -15,7 +19,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 31.242534,
-    "LONGITUDE": -109.645717
+    "LONGITUDE": -109.645717,
+    "Direccion": "Km 18 Carretera Agua Prieta Azacozari Rancho El Fresnal",
+    "Ciudad": "Agua Prieta",
+    "Estado": "Sonora",
+    "WEB": "www.gmexico.com"
   },
   {
     "OPER_NAME": "Corporacion Moctezuma SA de CV",
@@ -24,7 +32,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 19.3439479,
-    "LONGITUDE": -96.7044464
+    "LONGITUDE": -96.7044464,
+    "Direccion": "Predio Los Gallineros, Camino vecinal al Cerro Colorado km 1",
+    "Ciudad": "Apazapan",
+    "Estado": "Veracruz",
+    "WEB": "www.cmoctezuma.com.mx"
   },
   {
     "OPER_NAME": "Minera Camino Rojo SA de CV",
@@ -33,7 +45,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 24.16424139,
-    "LONGITUDE": -101.4979401
+    "LONGITUDE": -101.4979401,
+    "Direccion": "Carretera Federal Mexico 54",
+    "Ciudad": "Mazapil",
+    "Estado": "Zacatecas",
+    "WEB": "https://orlamining.com/"
   },
   {
     "OPER_NAME": "First Majestic Plata SA",
@@ -42,7 +58,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 30.0088789,
-    "LONGITUDE": -110.123841
+    "LONGITUDE": -110.123841,
+    "Direccion": "12 Kilometers South East Banamichi",
+    "Ciudad": "Banamichi",
+    "Estado": "Sonora",
+    "WEB": "https://www.firstmajestic.com/"
   },
   {
     "OPER_NAME": "Minera Plata Real S de RL de CV",
@@ -51,7 +71,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 27.54359438,
-    "LONGITUDE": -106.3264139
+    "LONGITUDE": -106.3264139,
+    "Direccion": "145 Kilometers South West Chihuahua City",
+    "Ciudad": "Valle Del Rosario",
+    "Estado": "Chihuahua",
+    "WEB": "https://www.firstmajestic.com/"
   },
   {
     "OPER_NAME": "Compania Minera La Llamarada SA de CV",
@@ -60,7 +84,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 30.22096012,
-    "LONGITUDE": -110.1583967
+    "LONGITUDE": -110.1583967,
+    "Direccion": "180 Km Northeast Hermosillo City",
+    "Ciudad": "Arizpe",
+    "Estado": "Sonora",
+    "WEB": "www.coeur.com"
   },
   {
     "OPER_NAME": "Inversiones Mineras La Sorpresa",
@@ -69,7 +97,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 24.94472644,
-    "LONGITUDE": -106.2584999
+    "LONGITUDE": -106.2584999,
+    "Direccion": "195 km North West to Durango",
+    "Ciudad": "Santiago Papasquiaro",
+    "Estado": "Durango",
+    "WEB": "sorpresamining.com"
   },
   {
     "OPER_NAME": "Primero Empresa Minera SA de CV (Durango)",
@@ -78,7 +110,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 24.106456,
-    "LONGITUDE": -105.911285
+    "LONGITUDE": -105.911285,
+    "Direccion": "Avenida 16 de Septiembre 51 Poblado de Tayoltita",
+    "Ciudad": "Tayoltita",
+    "Estado": "Durango",
+    "WEB": "https://www.firstmajestic.com/"
   },
   {
     "OPER_NAME": "Compania Minera Cuzcatlan SA de CV",
@@ -87,7 +123,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 16.693092,
-    "LONGITUDE": -96.700136
+    "LONGITUDE": -96.700136,
+    "Direccion": "Highway 175, 40KM South of Oaxaca",
+    "Ciudad": "Oaxaca",
+    "Estado": "Oaxaca",
+    "WEB": "https://fortunamining.com/investors/"
   },
   {
     "OPER_NAME": "First Majestic Plata SA",
@@ -96,7 +136,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 30.020864,
-    "LONGITUDE": -110.159129
+    "LONGITUDE": -110.159129,
+    "Direccion": "130 Kilometers North East Hermosillo",
+    "Ciudad": "Banamichi",
+    "Estado": "Sonora",
+    "WEB": "https://www.firstmajestic.com/"
   },
   {
     "OPER_NAME": "Minera y Metalurgica del Boleo SA de CV",
@@ -105,7 +149,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 27.372377,
-    "LONGITUDE": -112.292249
+    "LONGITUDE": -112.292249,
+    "Direccion": "Carretera Transpeninsular N 1 Km 5.5 al Norte",
+    "Ciudad": "Santa Rosalia",
+    "Estado": "Baja California Del Sur",
+    "WEB": "https://www.kores.or.kr/eng/userMain/engMain.do"
   },
   {
     "OPER_NAME": "Exportadora de Sal SA de CV",
@@ -114,7 +162,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 27.894241,
-    "LONGITUDE": -114.129897
+    "LONGITUDE": -114.129897,
+    "Direccion": "Avenida Baja California S/N",
+    "Ciudad": "Mulege",
+    "Estado": "Baja California Del Sur",
+    "WEB": "www.essa.com.mx"
   },
   {
     "OPER_NAME": "Omya Mexico SA de CV",
@@ -123,7 +175,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 20.446321,
-    "LONGITUDE": -99.962459
+    "LONGITUDE": -99.962459,
+    "Direccion": "Carretera San Juan del Rio - Tequisquiapan Km 7.5",
+    "Ciudad": "San Juan Del Rio",
+    "Estado": "Queretaro",
+    "WEB": "www.omya.com"
   },
   {
     "OPER_NAME": "Consorcio Minero Benito Juarez Pena Colorada SA de CV",
@@ -132,7 +188,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 19.386842,
-    "LONGITUDE": -104.091437
+    "LONGITUDE": -104.091437,
+    "Direccion": "Cerro Los Juanes S/N, Domicilio Conocido",
+    "Ciudad": "Minatitlan",
+    "Estado": "Colima",
+    "WEB": "www.techint.com"
   },
   {
     "OPER_NAME": "Compania Minera Pitalla SA de CV",
@@ -141,7 +201,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 28.802749,
-    "LONGITUDE": -110.571584
+    "LONGITUDE": -110.571584,
+    "Direccion": "Boulevard Carlos Quintero Arce 24-B",
+    "Ciudad": "Hermosillo",
+    "Estado": "Sonora",
+    "WEB": "www.heliostarmetals.com"
   },
   {
     "OPER_NAME": "Minera Cosala SA de CV",
@@ -150,7 +214,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 24.417298,
-    "LONGITUDE": -106.63236
+    "LONGITUDE": -106.63236,
+    "Direccion": "6 Kilometers East Cosala",
+    "Ciudad": "Cosala",
+    "Estado": "Sinaloa",
+    "WEB": "www.americas-gold.com"
   },
   {
     "OPER_NAME": "Minera Platte River Gold S de RL de CV",
@@ -159,7 +227,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 24.493144,
-    "LONGITUDE": -106.642745
+    "LONGITUDE": -106.642745,
+    "Direccion": "10 Kilometers North Cosala",
+    "Ciudad": "Cosala",
+    "Estado": "Sinaloa",
+    "WEB": "www.americas-gold.com"
   },
   {
     "OPER_NAME": "Minas de Campo Morado SA de CV",
@@ -168,7 +240,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 18.201215,
-    "LONGITUDE": -100.154096
+    "LONGITUDE": -100.154096,
+    "Direccion": "Campo Morado S/N Municipio de Arcelia Guerrero",
+    "Ciudad": "Teloloapan",
+    "Estado": "Guerrero",
+    "WEB": "www.lucamining.com"
   },
   {
     "OPER_NAME": "Minera Tayahua SA de CV",
@@ -177,7 +253,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 24.693531,
-    "LONGITUDE": -101.464978
+    "LONGITUDE": -101.464978,
+    "Direccion": "Domicilio Conocido SN",
+    "Ciudad": "Mazapil",
+    "Estado": "Zacatecas",
+    "WEB": "www.minerafrisco.com.mx"
   },
   {
     "OPER_NAME": "Compania Minera Mexicana de Avino SA de CV",
@@ -186,7 +266,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 24.526673,
-    "LONGITUDE": -104.307607
+    "LONGITUDE": -104.307607,
+    "Direccion": "65 Kilometers North West Durango",
+    "Ciudad": "Panuco De Coronado",
+    "Estado": "Durango",
+    "WEB": "www.avino.com"
   },
   {
     "OPER_NAME": "Minera Fresnillo SA de CV (Chihuahua)",
@@ -195,7 +279,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 26.03072,
-    "LONGITUDE": -106.500949
+    "LONGITUDE": -106.500949,
+    "Direccion": "45Km East from Guadalupe y Calvo",
+    "Ciudad": "Hidalgo Del Parral",
+    "Estado": "Chihuahua",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Real del Oro SA de CV (Argonaut Gold)",
@@ -204,7 +292,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 24.787911,
-    "LONGITUDE": -104.600471
+    "LONGITUDE": -104.600471,
+    "Direccion": "86 Kilometers North Durango",
+    "Ciudad": "San Juan Del Rio",
+    "Estado": "Durango",
+    "WEB": "www.heliostarmetals.com"
   },
   {
     "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
@@ -213,7 +305,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 25.20963,
-    "LONGITUDE": -106.568665
+    "LONGITUDE": -106.568665,
+    "Direccion": "Boulevard La Sierra 1 Centro",
+    "Ciudad": "Topia",
+    "Estado": "Durango",
+    "WEB": "www.gsilver.com"
   },
   {
     "OPER_NAME": "Don David Gold Mexico SA de CV",
@@ -222,7 +318,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 16.687157,
-    "LONGITUDE": -96.12137
+    "LONGITUDE": -96.12137,
+    "Direccion": "80 Kilometers Southeast of Oaxaca",
+    "Ciudad": "Oaxaca",
+    "Estado": "Oaxaca",
+    "WEB": "http://www.goldresourcecorp.com/"
   },
   {
     "OPER_NAME": "Minera Oro Silver de Mexico SA de CV",
@@ -231,7 +331,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 22.728564,
-    "LONGITUDE": -102.593211
+    "LONGITUDE": -102.593211,
+    "Direccion": "El Orito",
+    "Ciudad": "Zacatecas",
+    "Estado": "Zacatecas",
+    "WEB": "www.gruporosgo.com"
   },
   {
     "OPER_NAME": "Minera Meridian Mexico S de RL de CV",
@@ -240,7 +344,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 30.329356,
-    "LONGITUDE": -110.483028
+    "LONGITUDE": -110.483028,
+    "Direccion": "20KM East of Cucurpe",
+    "Ciudad": "Cucurpe",
+    "Estado": "Sonora",
+    "WEB": "www.bearcreekmining.com"
   },
   {
     "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
@@ -249,7 +357,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 21.04633335,
-    "LONGITUDE": -101.3265411
+    "LONGITUDE": -101.3265411,
+    "Direccion": "4 Km South of Mineral de la Luz",
+    "Ciudad": "Guanajuato",
+    "Estado": "Guanajuato",
+    "WEB": "www.gsilver.com"
   },
   {
     "OPER_NAME": "Minera Latin American Zinc SA de CV",
@@ -258,7 +370,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 29.0784052,
-    "LONGITUDE": -105.2441046
+    "LONGITUDE": -105.2441046,
+    "Direccion": "80 Kilometers North East Chihuahua",
+    "Ciudad": "Chihuahua",
+    "Estado": "Chihuahua",
+    "WEB": "https://impactsilver.com/"
   },
   {
     "OPER_NAME": "Minera Roca Rodando S de RL de CV",
@@ -267,7 +383,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 29.368209,
-    "LONGITUDE": -111.462289
+    "LONGITUDE": -111.462289,
+    "Direccion": "62 Kilometers North West Hermosillo",
+    "Ciudad": "Hermosillo",
+    "Estado": "Sonora",
+    "WEB": "www.imerys.com"
   },
   {
     "OPER_NAME": "Consorcio Minero Benito Juarez Pena Colorada SA de CV",
@@ -276,7 +396,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 19.085566,
-    "LONGITUDE": -104.277177
+    "LONGITUDE": -104.277177,
+    "Direccion": "Avenida del Trabajo 1000 Colonia Tapeixles",
+    "Ciudad": "Manzanillo",
+    "Estado": "Colima",
+    "WEB": "www.techint.com"
   },
   {
     "OPER_NAME": "Koura Global",
@@ -285,7 +409,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 21.9418403,
-    "LONGITUDE": -100.5835883
+    "LONGITUDE": -100.5835883,
+    "Direccion": "Mina La Salitrera S/N. 70 Kilometers South East San Luis Pot",
+    "Ciudad": "Zaragoza",
+    "Estado": "San Luis Potosi",
+    "WEB": "www.orbia.com"
   },
   {
     "OPER_NAME": "Refinadora Plata Guanacevi SA de CV",
@@ -294,7 +422,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 25.922143,
-    "LONGITUDE": -105.953458
+    "LONGITUDE": -105.953458,
+    "Direccion": "Domicilio Conocido Guanacevi",
+    "Ciudad": "Guanacevi",
+    "Estado": "Durango",
+    "WEB": "www.edrsilver.com"
   },
   {
     "OPER_NAME": "Rofomex SA de CV",
@@ -303,7 +435,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 24.390891,
-    "LONGITUDE": -110.690887
+    "LONGITUDE": -110.690887,
+    "Direccion": "Domicilio Conocido Zona Industrial",
+    "Ciudad": "La Paz",
+    "Estado": "Baja California Del Sur",
+    "WEB": "www.pemex.com"
   },
   {
     "OPER_NAME": "Minera Frisco SAB de CV",
@@ -312,7 +448,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 28.183763,
-    "LONGITUDE": -108.383136
+    "LONGITUDE": -108.383136,
+    "Direccion": "Carretera Chihuahua Hermosillo Km 280",
+    "Ciudad": "Ocampo",
+    "Estado": "Chihuahua",
+    "WEB": "www.minerafrisco.com.mx"
   },
   {
     "OPER_NAME": "Minera San Francisco Del Oro SA de CV",
@@ -321,7 +461,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 26.87689629,
-    "LONGITUDE": -105.847984
+    "LONGITUDE": -105.847984,
+    "Direccion": "Domicilio Conocido Fraccionamiento San Francisco Del Oro",
+    "Ciudad": "San Francisco Del Oro",
+    "Estado": "Chihuahua",
+    "WEB": "www.minerafrisco.com.mx"
   },
   {
     "OPER_NAME": "ArcelorMittal Lazaro Cardenas SA de CV",
@@ -330,7 +474,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 18.06375,
-    "LONGITUDE": -102.366781
+    "LONGITUDE": -102.366781,
+    "Direccion": "2km from La Mira, 27km from Complejo Siderurgico Las Truchas",
+    "Ciudad": "Lazaro Cardenas",
+    "Estado": "Michoacan",
+    "WEB": "corporate.arcelormittal.com"
   },
   {
     "OPER_NAME": "Caleras De La Laguna SA de CV",
@@ -339,7 +487,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 25.509193,
-    "LONGITUDE": -103.42962
+    "LONGITUDE": -103.42962,
+    "Direccion": "Avenida 4ta y Calle 16",
+    "Ciudad": "Torreon",
+    "Estado": "Coahuila",
+    "WEB": "www.calidra.com"
   },
   {
     "OPER_NAME": "Caleras Bertran SA de CV",
@@ -348,7 +500,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 20.011554,
-    "LONGITUDE": -99.218723
+    "LONGITUDE": -99.218723,
+    "Direccion": "Carretera Atotonilco - Progreso s/n",
+    "Ciudad": "Antotonilco de Tula",
+    "Estado": "Hidalgo",
+    "WEB": "www.cegimsa.com.mx"
   },
   {
     "OPER_NAME": "Industrias Penoles SAB de CV",
@@ -357,7 +513,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 31.109403,
-    "LONGITUDE": -110.437149
+    "LONGITUDE": -110.437149,
+    "Direccion": "50 km Southeast from Heroica Nogales",
+    "Ciudad": "Santa Cruz",
+    "Estado": "Sonora",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Agnico-Eagle Mexico SA de CV",
@@ -366,7 +526,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 28.7175808,
-    "LONGITUDE": -108.8937449
+    "LONGITUDE": -108.8937449,
+    "Direccion": "200 Km East from Hermosillo",
+    "Ciudad": "Tarachi",
+    "Estado": "Sonora",
+    "WEB": "www.agnicoeagle.com"
   },
   {
     "OPER_NAME": "Goldgroup Mining Incorporated",
@@ -375,7 +539,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 30.41428816,
-    "LONGITUDE": -110.6594564
+    "LONGITUDE": -110.6594564,
+    "Direccion": "14 Km Noth of Cucurpe City",
+    "Ciudad": "Cucurpe",
+    "Estado": "Sonora",
+    "WEB": "https://goldgroupmining.com/"
   },
   {
     "OPER_NAME": "Guanajuato Silver Company Limited",
@@ -384,7 +552,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 21.021114,
-    "LONGITUDE": -101.183201
+    "LONGITUDE": -101.183201,
+    "Direccion": "6 Km Northwest of Guanajuato",
+    "Ciudad": "Guanajuato",
+    "Estado": "Guanajuato",
+    "WEB": "www.gsilver.com"
   },
   {
     "OPER_NAME": "Desarrollos Mineros San Luis SA de CV",
@@ -393,7 +565,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 17.869255,
-    "LONGITUDE": -99.682576
+    "LONGITUDE": -99.682576,
+    "Direccion": "10 Km South West Mezcala",
+    "Ciudad": "Mezcala",
+    "Estado": "Guerrero",
+    "WEB": "https://www.equinoxgold.com/"
   },
   {
     "OPER_NAME": "Plata Panamericana SA de CV",
@@ -402,7 +578,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.380593,
-    "LONGITUDE": -103.757774
+    "LONGITUDE": -103.757774,
+    "Direccion": "Domicilio Conocido La Colorada",
+    "Ciudad": "Chalchihuites",
+    "Estado": "Zacatecas",
+    "WEB": "www.panamericansilver.com"
   },
   {
     "OPER_NAME": "Aranzazu Holding SA de CV",
@@ -411,7 +591,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 24.608881,
-    "LONGITUDE": -101.430105
+    "LONGITUDE": -101.430105,
+    "Direccion": "1 kilometer Southwest Concepcion del Oro",
+    "Ciudad": "Concepcion Del Oro",
+    "Estado": "Zacatecas",
+    "WEB": "www.auraminerals.com"
   },
   {
     "OPER_NAME": "Minera Oro Silver de Mexico SA de CV",
@@ -420,7 +604,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 22.808807,
-    "LONGITUDE": -102.559244
+    "LONGITUDE": -102.559244,
+    "Direccion": "5 Kilometers North Zacatecas City",
+    "Ciudad": "Zacatecas",
+    "Estado": "Zacatecas",
+    "WEB": "www.gruporosgo.com"
   },
   {
     "OPER_NAME": "Compania Minera Autlan SA de CV",
@@ -429,7 +617,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 20.972806,
-    "LONGITUDE": -98.744271
+    "LONGITUDE": -98.744271,
+    "Direccion": "Km 162 Casetas Carretera Mexico-Tampico",
+    "Ciudad": "Molango De Escamilla",
+    "Estado": "Hidalgo",
+    "WEB": "www.autlan.com.mx"
   },
   {
     "OPER_NAME": "Cemex Agregados SA de CV",
@@ -438,7 +630,11 @@
     "Underground": "no",
     "Quarry": "si",
     "LATITUDE": 19.962801,
-    "LONGITUDE": -99.221249
+    "LONGITUDE": -99.221249,
+    "Direccion": "Coayuca",
+    "Ciudad": "Tula De Allende",
+    "Estado": "Hidalgo",
+    "WEB": "www.cemex.com"
   },
   {
     "OPER_NAME": "Minera Mexicana El Rosario SA de CV",
@@ -447,7 +643,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 21.042661,
-    "LONGITUDE": -101.245788
+    "LONGITUDE": -101.245788,
+    "Direccion": "Ex Hacienda de Bustos sin numero",
+    "Ciudad": "Guanajuato",
+    "Estado": "Guanajuato",
+    "WEB": "www.gsilver.com"
   },
   {
     "OPER_NAME": "Minera Tizapa SA de CV",
@@ -456,7 +656,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 19.037775,
-    "LONGITUDE": -100.233301
+    "LONGITUDE": -100.233301,
+    "Direccion": "5 Kilometers Southeast Zacazonapan",
+    "Ciudad": "Zacazonapan",
+    "Estado": "Mexico",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Fresnillo SA de CV",
@@ -465,7 +669,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.16372,
-    "LONGITUDE": -102.873148
+    "LONGITUDE": -102.873148,
+    "Direccion": "Prolongacion Avenida Hidalgo 451 Colonia Centro",
+    "Ciudad": "Fresnillo",
+    "Estado": "Zacatecas",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minas de Oro Nacional SA de CV",
@@ -474,7 +682,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 28.639806,
-    "LONGITUDE": -108.742331
+    "LONGITUDE": -108.742331,
+    "Direccion": "220 Kilometers South East Hermosillo",
+    "Ciudad": "Mulatos",
+    "Estado": "Sonora",
+    "WEB": "http://www.alamosgold.com"
   },
   {
     "OPER_NAME": "Agregados y Bloques Cancun SA de CV",
@@ -483,7 +695,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 21.135335,
-    "LONGITUDE": -86.908543
+    "LONGITUDE": -86.908543,
+    "Direccion": "Carretera Merida-Puerto Juarez Km 309 Region 105",
+    "Ciudad": "Cancun",
+    "Estado": "Quintana Roo",
+    "WEB": "www.abc-cancun.com"
   },
   {
     "OPER_NAME": "Industrial Minera Mexico SA de CV",
@@ -492,7 +708,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 26.815382,
-    "LONGITUDE": -105.81432
+    "LONGITUDE": -105.81432,
+    "Direccion": "Hacienda Tecolotes S/N",
+    "Ciudad": "Santa Barbara",
+    "Estado": "Chihuahua",
+    "WEB": "www.gmexico.com"
   },
   {
     "OPER_NAME": "Ternium Las Encinas SA de CV",
@@ -501,7 +721,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 18.621226,
-    "LONGITUDE": -103.469813
+    "LONGITUDE": -103.469813,
+    "Direccion": "Aquila Mine Site",
+    "Ciudad": "Aquila",
+    "Estado": "Michoacan",
+    "WEB": "www.techint.com"
   },
   {
     "OPER_NAME": "Buenavista del Cobre SA de CV",
@@ -510,7 +734,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 30.960041,
-    "LONGITUDE": -110.315593
+    "LONGITUDE": -110.315593,
+    "Direccion": "Avenida Juarez 4",
+    "Ciudad": "Cananea",
+    "Estado": "Sonora",
+    "WEB": "www.gmexico.com"
   },
   {
     "OPER_NAME": "Compania de Real Del Monte y Pachuca SA de CV",
@@ -519,7 +747,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 20.136389,
-    "LONGITUDE": -98.729217
+    "LONGITUDE": -98.729217,
+    "Direccion": "Prolongacion Venustiano Carranza 101 Colonia San Juan Pachuc",
+    "Ciudad": "Pachuca De Soto",
+    "Estado": "Hidalgo",
+    "WEB": "www.ahmsa.com"
   },
   {
     "OPER_NAME": "Dia Bras Mexicana SA de CV",
@@ -528,7 +760,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 27.093577,
-    "LONGITUDE": -107.989315
+    "LONGITUDE": -107.989315,
+    "Direccion": "15 km Southwest of Urique",
+    "Ciudad": "Chihuahua",
+    "Estado": "Chihuahua",
+    "WEB": "www.sierrametals.com"
   },
   {
     "OPER_NAME": "Endeavour Silver Corporation SA de CV",
@@ -537,7 +773,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 21.070999,
-    "LONGITUDE": -101.332459
+    "LONGITUDE": -101.332459,
+    "Direccion": "10 Kilometers North West Guanajuato, Carretera a Cristo Rey",
+    "Ciudad": "Guanajuato",
+    "Estado": "Guanajuato",
+    "WEB": "www.edrsilver.com"
   },
   {
     "OPER_NAME": "Industrial Minera Mexico SA de CV",
@@ -546,7 +786,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.664754,
-    "LONGITUDE": -103.745898
+    "LONGITUDE": -103.745898,
+    "Direccion": "Domicilio Conocido s/n Rancheria San Martin",
+    "Ciudad": "Sombrerete",
+    "Estado": "Zacatecas",
+    "WEB": "www.gmexico.com"
   },
   {
     "OPER_NAME": "Cobre Del Mayo SA de CV",
@@ -555,7 +799,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 27.160661,
-    "LONGITUDE": -109.021119
+    "LONGITUDE": -109.021119,
+    "Direccion": "16 Kilometers North West of Alamos",
+    "Ciudad": "Alamos",
+    "Estado": "Sonora",
+    "WEB": "www.fronteracopper.com"
   },
   {
     "OPER_NAME": "Minera Saucito SA de CV",
@@ -564,7 +812,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.127149,
-    "LONGITUDE": -102.925982
+    "LONGITUDE": -102.925982,
+    "Direccion": "10 Kilometers South West Fresnillo",
+    "Ciudad": "Fresnillo",
+    "Estado": "Zacatecas",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Alamos de Sonora SA de CV",
@@ -573,7 +825,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 28.36389332,
-    "LONGITUDE": -109.2005227
+    "LONGITUDE": -109.2005227,
+    "Direccion": "50 km SW of Alamos",
+    "Ciudad": "Curea",
+    "Estado": "Sonora",
+    "WEB": "www.mineraalamos.com"
   },
   {
     "OPER_NAME": "Calizas Industriales del Carmen SA",
@@ -582,7 +838,11 @@
     "Underground": "no",
     "Quarry": "si",
     "LATITUDE": 20.58627,
-    "LONGITUDE": -87.154489
+    "LONGITUDE": -87.154489,
+    "Direccion": "Km 282.6 Carretera Federal Chetumal",
+    "Ciudad": "Cozumel",
+    "Estado": "Quintana Roo",
+    "WEB": "www.vulcanmaterials.com"
   },
   {
     "OPER_NAME": "Sales del Istmo SA de CV",
@@ -591,7 +851,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 18.106702,
-    "LONGITUDE": -94.393233
+    "LONGITUDE": -94.393233,
+    "Direccion": "Complejo Industrial Pajaritos SN",
+    "Ciudad": "Coatzacoalcos",
+    "Estado": "Veracruz",
+    "WEB": "www.cydsa.com"
   },
   {
     "OPER_NAME": "Cemex Agregados SA de CV",
@@ -600,7 +864,11 @@
     "Underground": "no",
     "Quarry": "si",
     "LATITUDE": 20.020996,
-    "LONGITUDE": -99.304109
+    "LONGITUDE": -99.304109,
+    "Direccion": "Cantera Palma Domicilio Conocido",
+    "Ciudad": "Tula De Allende",
+    "Estado": "Hidalgo",
+    "WEB": "www.cemex.com"
   },
   {
     "OPER_NAME": "Covia Mexico",
@@ -609,7 +877,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 17.97966486,
-    "LONGITUDE": -94.71757966
+    "LONGITUDE": -94.71757966,
+    "Direccion": "Carretera Sayula-Ciudad Aleman Km 12.5",
+    "Ciudad": "San Juan Evangelista",
+    "Estado": "Veracruz",
+    "WEB": "https://www.coviacorp.com/"
   },
   {
     "OPER_NAME": "Minera Pena de Bernal SA de CV",
@@ -618,7 +890,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 20.730506,
-    "LONGITUDE": -99.9756
+    "LONGITUDE": -99.9756,
+    "Direccion": "San Martin Domicilio Conocido",
+    "Ciudad": "Colon",
+    "Estado": "Queretaro",
+    "WEB": "www.starcore.com"
   },
   {
     "OPER_NAME": "Minera La Encantada SA de CV",
@@ -627,7 +903,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 28.359435,
-    "LONGITUDE": -102.560246
+    "LONGITUDE": -102.560246,
+    "Direccion": "200 Kilometers North West Monclova City",
+    "Ciudad": "Muzquiz",
+    "Estado": "Coahuila",
+    "WEB": "https://www.firstmajestic.com/"
   },
   {
     "OPER_NAME": "Calidra de Oriente SA de CV",
@@ -636,7 +916,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 19.113484,
-    "LONGITUDE": -97.886607
+    "LONGITUDE": -97.886607,
+    "Direccion": "Ex-hacienda de San Martin La Joya s/n",
+    "Ciudad": "Acajete",
+    "Estado": "Puebla",
+    "WEB": "www.calidra.com"
   },
   {
     "OPER_NAME": "Real de la Bufa SA de CV",
@@ -645,7 +929,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 25.437026,
-    "LONGITUDE": -106.638484
+    "LONGITUDE": -106.638484,
+    "Direccion": "26 Kilometers North West Topia",
+    "Ciudad": "Topia",
+    "Estado": "Durango",
+    "WEB": "www.lucamining.com"
   },
   {
     "OPER_NAME": "Minera Penasquito SA de CV",
@@ -654,7 +942,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 24.648197,
-    "LONGITUDE": -101.688831
+    "LONGITUDE": -101.688831,
+    "Direccion": "Domicilio Conocido Municipio de Mazapil",
+    "Ciudad": "Concepcion Del Oro",
+    "Estado": "Zacatecas",
+    "WEB": "www.newmont.com"
   },
   {
     "OPER_NAME": "Mexicana de Cobre SA de CV",
@@ -663,7 +955,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 30.322258,
-    "LONGITUDE": -109.559698
+    "LONGITUDE": -109.559698,
+    "Direccion": "Carretera Nacozari-Agua Prieta Km 21",
+    "Ciudad": "Nacozari De Garcia",
+    "Estado": "Sonora",
+    "WEB": "www.gmexico.com"
   },
   {
     "OPER_NAME": "Minera Penmont S de RL de CV",
@@ -672,7 +968,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 31.02533,
-    "LONGITUDE": -112.6482
+    "LONGITUDE": -112.6482,
+    "Direccion": "Carretera Puerto Penasco Km 47",
+    "Ciudad": "Puerto Penasco",
+    "Estado": "Sonora",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Mexicana La Cienega SA de CV",
@@ -681,7 +981,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 25.046637,
-    "LONGITUDE": -106.344083
+    "LONGITUDE": -106.344083,
+    "Direccion": "Domicilio Conocido Cienega de Nuestra Senora S/N",
+    "Ciudad": "Santiago Papasquiaro",
+    "Estado": "Durango",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Capela SA de CV",
@@ -690,7 +994,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 18.306645,
-    "LONGITUDE": -99.930181
+    "LONGITUDE": -99.930181,
+    "Direccion": "18 Kilometers North West Teloloapan",
+    "Ciudad": "Teloloapan",
+    "Estado": "Guerrero",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Agnico-Eagle Mexico SA de CV",
@@ -699,7 +1007,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 28.266629,
-    "LONGITUDE": -108.2871608
+    "LONGITUDE": -108.2871608,
+    "Direccion": "10 Km NW of Cahuizori",
+    "Ciudad": "Pino Altos",
+    "Estado": "Chihuahua",
+    "WEB": "www.agnicoeagle.com"
   },
   {
     "OPER_NAME": "Carrizal Mining SA de CV",
@@ -708,7 +1020,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 20.793574,
-    "LONGITUDE": -99.449353
+    "LONGITUDE": -99.449353,
+    "Direccion": "9.6 km Northwest from Zimapan",
+    "Ciudad": "Zimapan",
+    "Estado": "Hidalgo",
+    "WEB": "https://santacruzsilver.com/"
   },
   {
     "OPER_NAME": "Carrizal Mining SA de CV",
@@ -717,7 +1033,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 20.792423,
-    "LONGITUDE": -99.335753
+    "LONGITUDE": -99.335753,
+    "Direccion": "Mexico 85",
+    "Ciudad": "Zimapan",
+    "Estado": "Hidalgo",
+    "WEB": "https://santacruzsilver.com/"
   },
   {
     "OPER_NAME": "Coanzamex SA de CV",
@@ -726,7 +1046,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 26.944303,
-    "LONGITUDE": -105.660879
+    "LONGITUDE": -105.660879,
+    "Direccion": "200 Kilometers South East Chihuahua",
+    "Ciudad": "Hidalgo Del Parral",
+    "Estado": "Chihuahua",
+    "WEB": "www.gogoldresources.com"
   },
   {
     "OPER_NAME": "Cemex Mexico SA de CV",
@@ -735,7 +1059,11 @@
     "Underground": "no",
     "Quarry": "si",
     "LATITUDE": 20.944171,
-    "LONGITUDE": -89.664137
+    "LONGITUDE": -89.664137,
+    "Direccion": "Carretera Merida-Uman Km 6, Colonia Ciudad Industrial",
+    "Ciudad": "Merida",
+    "Estado": "Yucatan",
+    "WEB": "www.cemex.com"
   },
   {
     "OPER_NAME": "Compania Minera Caopas SA de CV",
@@ -744,7 +1072,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 27.395945,
-    "LONGITUDE": -112.335564
+    "LONGITUDE": -112.335564,
+    "Direccion": "Carretera Transpeninsular Km 9+400",
+    "Ciudad": "Mulege",
+    "Estado": "Baja California Del Sur",
+    "WEB": "www.caopas.net"
   },
   {
     "OPER_NAME": "Silice del Istmo SA de CV",
@@ -753,7 +1085,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 17.8963253,
-    "LONGITUDE": -95.03683184
+    "LONGITUDE": -95.03683184,
+    "Direccion": "Km 10 Carretera Sayula-San Juan Evangelista",
+    "Ciudad": "Acayucan",
+    "Estado": "Veracruz",
+    "WEB": "www.crowncork.com"
   },
   {
     "OPER_NAME": "Capstone Gold SA de CV",
@@ -762,7 +1098,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 22.802049,
-    "LONGITUDE": -102.585824
+    "LONGITUDE": -102.585824,
+    "Direccion": "Cerro de San Roberto S/N Ejido Hacienda Nueva",
+    "Ciudad": "Morelos",
+    "Estado": "Zacatecas",
+    "WEB": "www.capstonecopper.com"
   },
   {
     "OPER_NAME": "Coeur Mexicana SA de CV",
@@ -771,7 +1111,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 27.3916135,
-    "LONGITUDE": -108.4119915
+    "LONGITUDE": -108.4119915,
+    "Direccion": "15Km Northwest of Temoris",
+    "Ciudad": "Temosachi",
+    "Estado": "Chihuahua",
+    "WEB": "www.coeur.com"
   },
   {
     "OPER_NAME": "Compania Minera Sabinas SA de CV",
@@ -780,7 +1124,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.654775,
-    "LONGITUDE": -103.751578
+    "LONGITUDE": -103.751578,
+    "Direccion": "155 Kilometres North West Zacatecas City",
+    "Ciudad": "Sombrerete",
+    "Estado": "Zacatecas",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Industrial Minera Mexico SA de CV",
@@ -789,7 +1137,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.141638,
-    "LONGITUDE": -101.16114
+    "LONGITUDE": -101.16114,
+    "Direccion": "Calle Mina Tiro General s/n",
+    "Ciudad": "Charcas",
+    "Estado": "San Luis Potosi",
+    "WEB": "www.gmexico.com"
   },
   {
     "OPER_NAME": "Calidra de Occidente SA de CV",
@@ -798,7 +1150,11 @@
     "Underground": "no",
     "Quarry": "si",
     "LATITUDE": 19.640801,
-    "LONGITUDE": -103.436298
+    "LONGITUDE": -103.436298,
+    "Direccion": "Avenida Jose Miguel Fernandez N� 1",
+    "Ciudad": "Zapotiltic",
+    "Estado": "Jalisco",
+    "WEB": "www.calidra.com"
   },
   {
     "OPER_NAME": "Ternium Las Encinas SA de CV",
@@ -807,7 +1163,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 19.255336,
-    "LONGITUDE": -103.531316
+    "LONGITUDE": -103.531316,
+    "Direccion": "Domicilio Conocido S/N Estacion la Alzada",
+    "Ciudad": "Cuauhtemoc",
+    "Estado": "Colima",
+    "WEB": "www.techint.com"
   },
   {
     "OPER_NAME": "Fresnillo Plc",
@@ -816,7 +1176,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 23.11771,
-    "LONGITUDE": -102.959566
+    "LONGITUDE": -102.959566,
+    "Direccion": "8 Km South West Fresnillo",
+    "Ciudad": "Fresnillo",
+    "Estado": "Zacatecas",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Roble SA De CV",
@@ -825,7 +1189,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 25.060997,
-    "LONGITUDE": -103.734327
+    "LONGITUDE": -103.734327,
+    "Direccion": "Calle Domicilio Conocido S/N",
+    "Ciudad": "Cuencame",
+    "Estado": "Durango",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Minera Penmont S de RL de CV",
@@ -834,7 +1202,11 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 31.148846,
-    "LONGITUDE": -112.852797
+    "LONGITUDE": -112.852797,
+    "Direccion": "83 km North West from Caborca",
+    "Ciudad": "Caborca",
+    "Estado": "Sonora",
+    "WEB": "www.penoles.com.mx"
   },
   {
     "OPER_NAME": "Compania Minera Dolores SA de CV",
@@ -843,7 +1215,11 @@
     "Underground": "si",
     "Quarry": "no",
     "LATITUDE": 28.988621,
-    "LONGITUDE": -108.551054
+    "LONGITUDE": -108.551054,
+    "Direccion": "250 Km West of Chihuahua City",
+    "Ciudad": "Dolores",
+    "Estado": "Chihuahua",
+    "WEB": "www.panamericansilver.com"
   },
   {
     "OPER_NAME": "Grupo Mexico SAB de CV",
@@ -852,6 +1228,10 @@
     "Underground": "no",
     "Quarry": "no",
     "LATITUDE": 30.195068,
-    "LONGITUDE": -109.374933
+    "LONGITUDE": -109.374933,
+    "Direccion": "6 Km West of La Caridad Mine, 10 Km SE of Nacozari",
+    "Ciudad": "Nacozari De Garcia",
+    "Estado": "Sonora",
+    "WEB": "www.gmexico.com"
   }
 ]
