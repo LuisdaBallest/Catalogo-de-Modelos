@@ -244,7 +244,12 @@ if st.session_state.password_correct:
 
         # Crear el mapa
         if filtered_plantas:
-            m = folium.Map(location=[filtered_plantas[0]['LATITUDE'], filtered_plantas[0]['LONGITUDE']], zoom_start=5, tiles='Stamen Terrain')
+            m = folium.Map(
+                location=[filtered_plantas[0]['LATITUDE'], filtered_plantas[0]['LONGITUDE']],
+                zoom_start=5,
+                tiles='https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+                attr='&copy; <a href="https://opentopomap.org">OpenTopoMap</a> contributors'
+            )
 
             # Añadir marcadores al mapa
             for planta in filtered_plantas:
