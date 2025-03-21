@@ -252,9 +252,10 @@ if st.session_state.password_correct:
                     location=[planta['LATITUDE'], planta['LONGITUDE']],
                     popup=f"{planta['PLANT_NAME']} ({planta['OPER_NAME']})",
                     tooltip=planta['PLANT_NAME']
+                    icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'blue' if planta['Underground'] == 'si' else 'red')
                 ).add_to(m)
 
             # Mostrar el mapa en Streamlit
-            st_folium(m, width=700, height=500)
+            st_folium(m, use_container_width=True)
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
