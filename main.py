@@ -287,12 +287,12 @@ if st.session_state.password_correct:
             # Mostrar detalles de todas las plantas filtradas en el sidebar
             st.sidebar.title("Detalles de las plantas mostradas en el mapa")
             for planta in filtered_plantas:
-                st.sidebar.write(f"### {planta['PLANT_NAME']}")
-                st.sidebar.write(f"**Operador:** {planta['OPER_NAME']}")
-                st.sidebar.write(f"**Dirección:** {planta['Direccion']}")
-                st.sidebar.write(f"**Ciudad:** {planta['Ciudad']}")
-                st.sidebar.write(f"**Estado:** {planta['Estado']}")
-                st.sidebar.write(f"**Web:** {planta['WEB']}")
+                st.sidebar.write(f"### {planta.get('PLANT_NAME', 'N/A')}")
+                st.sidebar.write(f"**Operador:** {planta.get('OPER_NAME', 'N/A')}")
+                st.sidebar.write(f"**Dirección:** {planta.get('Direccion', 'N/A')}")
+                st.sidebar.write(f"**Ciudad:** {planta.get('Ciudad', 'N/A')}")
+                st.sidebar.write(f"**Estado:** {planta.get('Estado', 'N/A')}")
+                st.sidebar.write(f"**Web:** {planta.get('WEB', 'N/A')}")
                 st.divider()
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
