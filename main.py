@@ -279,6 +279,6 @@ if st.session_state.password_correct:
                 ).add_to(m)
 
             # Mostrar el mapa en Streamlit
-            st_folium(m, use_container_width=True)
+            st_folium(m, use_container_width=True, height=600)
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
