@@ -230,7 +230,7 @@ if st.session_state.password_correct:
             plantas_data = json.load(f)
 
         # Convertir datos a DataFrame
-        df_plantas = pd.DataFrame(plantas_data[0])
+        df_plantas = pd.DataFrame(plantas_data)
 
         # Filtros para las plantas
         surface = st.checkbox("Surface", value=True)
