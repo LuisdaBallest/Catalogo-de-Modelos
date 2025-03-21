@@ -309,8 +309,5 @@ if st.session_state.password_correct:
                             icon=folium.Icon(color='green' if planta['Surface'] == 'si' else 'red' if planta['Underground'] == 'si' else 'blue', icon="person-digging", prefix='fa')
                         ).add_to(m)
                         break
-
-            # Actualizar el mapa en Streamlit
-            st_folium(m, use_container_width=True, zoom=5)
         else:
             st.write("No hay plantas que coincidan con los filtros seleccionados.")
