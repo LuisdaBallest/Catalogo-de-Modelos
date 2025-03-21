@@ -240,9 +240,13 @@ if st.session_state.password_correct:
         plantas_data = load_plantas_data()
 
         # Filtros para las plantas
-        surface = st.checkbox("Surface", value=True)
-        underground = st.checkbox("Underground", value=True)
-        quarry = st.checkbox("Quarry", value=True)
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            surface = st.checkbox("Surface", value=True)
+        with col2:
+            underground = st.checkbox("Underground", value=True)
+        with col3:
+            quarry = st.checkbox("Quarry", value=True)
 
         # Filtrar los datos en función de las selecciones del usuario
         filtered_plantas = [
