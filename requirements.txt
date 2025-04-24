@@ -6,3 +6,4 @@ mysql-connector-python
 pillow
 folium
 streamlit_folium
+sshtunnel
