@@ -32,8 +32,8 @@ def load_data_from_db():
         
         
         # Configurar timeouts para el túnel SSH
-        sshtunnel.SSH_TIMEOUT = 10.0
-        sshtunnel.TUNNEL_TIMEOUT = 10.0
+        sshtunnel.SSH_TIMEOUT = 15.0
+        sshtunnel.TUNNEL_TIMEOUT = 15.0
         
         # Crear el túnel SSH
         with sshtunnel.SSHTunnelForwarder(
