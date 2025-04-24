@@ -26,107 +26,107 @@ if st.session_state.password_correct:
     # Crear tabs
     tab1, tab2 = st.tabs(["Catálogo de Equipos Mineros", "Mapa de Plantas"])
 
-@st.cache_data
-def load_data_from_db():
-    try:
-        
-        
-        # Configurar timeouts para el túnel SSH
-        sshtunnel.SSH_TIMEOUT = 15.0
-        sshtunnel.TUNNEL_TIMEOUT = 15.0
-        
-        # Crear el túnel SSH
-        with sshtunnel.SSHTunnelForwarder(
-            ('ssh.pythonanywhere.com'),
-            ssh_username=st.secrets["ssh_username"], 
-            ssh_password=st.secrets["ssh_password"],
-            remote_bind_address=(st.secrets["remote_bind_address"], 3306)
-        ) as tunnel:
-            # Conectar a la base de datos a través del túnel
-            conn = connect(
-                user=st.secrets["user"],
-                password=st.secrets["password"],
-                host=st.secrets["host"], 
-                port=tunnel.local_bind_port,
-                database=st.secrets["database"]  # Ajusta el nombre de la base de datos si es necesario
-            )
-            
-            cursor = conn.cursor(dictionary=True)
-            
-            # Obtener datos de la tabla Modelos
-            cursor.execute("SELECT * FROM Modelos")
-            df_modelos = pd.DataFrame(cursor.fetchall())
-            
-            # Obtener datos de la tabla llantas
-            cursor.execute("SELECT * FROM llantas")
-            df_llantas = pd.DataFrame(cursor.fetchall())
-            
-            # Obtener datos de la tabla Valvulas
-            cursor.execute("SELECT * FROM Valvulas")
-            df_valvulas = pd.DataFrame(cursor.fetchall())
-            
-            # Obtener datos de la tabla Rines
-            cursor.execute("SELECT * FROM Rines")
-            df_rines = pd.DataFrame(cursor.fetchall())
-            
-            # Obtener datos de la tabla Equipos_Mina
-            cursor.execute("SELECT * FROM Equipos_Mina")
-            df_equipos_mina = pd.DataFrame(cursor.fetchall())
-            
-            cursor.close()
-            conn.close()
-            
-            return df_modelos, df_llantas, df_valvulas, df_rines, df_equipos_mina
-    
-    except Exception as e:
-        st.error(f"Error al conectar a la base de datos: {e}")
-        
-        # Si hay error, intentar cargar desde archivos CSV locales
+    @st.cache_data
+    def load_data_from_db():
         try:
-            st.warning("Intentando cargar datos desde archivos locales...")
-            df_modelos = pd.DataFrame()
-            df_llantas = pd.DataFrame()
-            df_valvulas = pd.DataFrame()
-            df_rines = pd.DataFrame()
-            df_equipos_mina = pd.DataFrame()
             
-            # Intenta cargar desde CSV si existen
-            try:
-                df_modelos = pd.read_csv("data/modelos.csv")
-                st.success("Datos de Modelos cargados correctamente")
-            except:
-                st.warning("No se pudieron cargar los datos de Modelos")
-                
-            try:
-                df_llantas = pd.read_csv("data/llantas.csv")
-                st.success("Datos de Llantas cargados correctamente")
-            except:
-                st.warning("No se pudieron cargar los datos de Llantas")
-                
-            try:
-                df_valvulas = pd.read_csv("data/valvulas.csv")
-                st.success("Datos de Válvulas cargados correctamente")
-            except:
-                st.warning("No se pudieron cargar los datos de Válvulas")
-                
-            try:
-                df_rines = pd.read_csv("data/rines.csv")
-                st.success("Datos de Rines cargados correctamente")
-            except:
-                st.warning("No se pudieron cargar los datos de Rines")
-                
-            try:
-                df_equipos_mina = pd.read_csv("data/equipos_mina.csv")
-                st.success("Datos de Equipos Mina cargados correctamente")
-            except:
-                st.warning("No se pudieron cargar los datos de Equipos Mina")
-                
-            return df_modelos, df_llantas, df_valvulas, df_rines, df_equipos_mina
             
-        except Exception as e2:
-            st.error(f"Error al cargar datos locales: {e2}")
-            return pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
-    df_modelos, df_llantas, df_valvulas, df_rines, df_equipos_mina = load_data_from_db()
+            # Configurar timeouts para el túnel SSH
+            sshtunnel.SSH_TIMEOUT = 15.0
+            sshtunnel.TUNNEL_TIMEOUT = 15.0
+            
+            # Crear el túnel SSH
+            with sshtunnel.SSHTunnelForwarder(
+                ('ssh.pythonanywhere.com'),
+                ssh_username=st.secrets["ssh_username"], 
+                ssh_password=st.secrets["ssh_password"],
+                remote_bind_address=(st.secrets["remote_bind_address"], 3306)
+            ) as tunnel:
+                # Conectar a la base de datos a través del túnel
+                conn = connect(
+                    user=st.secrets["user"],
+                    password=st.secrets["password"],
+                    host=st.secrets["host"], 
+                    port=tunnel.local_bind_port,
+                    database=st.secrets["database"]  # Ajusta el nombre de la base de datos si es necesario
+                )
+                
+                cursor = conn.cursor(dictionary=True)
+                
+                # Obtener datos de la tabla Modelos
+                cursor.execute("SELECT * FROM Modelos")
+                df_modelos = pd.DataFrame(cursor.fetchall())
+                
+                # Obtener datos de la tabla llantas
+                cursor.execute("SELECT * FROM llantas")
+                df_llantas = pd.DataFrame(cursor.fetchall())
+                
+                # Obtener datos de la tabla Valvulas
+                cursor.execute("SELECT * FROM Valvulas")
+                df_valvulas = pd.DataFrame(cursor.fetchall())
+                
+                # Obtener datos de la tabla Rines
+                cursor.execute("SELECT * FROM Rines")
+                df_rines = pd.DataFrame(cursor.fetchall())
+                
+                # Obtener datos de la tabla Equipos_Mina
+                cursor.execute("SELECT * FROM Equipos_Mina")
+                df_equipos_mina = pd.DataFrame(cursor.fetchall())
+                
+                cursor.close()
+                conn.close()
+                
+                return df_modelos, df_llantas, df_valvulas, df_rines, df_equipos_mina
+        
+        except Exception as e:
+            st.error(f"Error al conectar a la base de datos: {e}")
+            
+            # Si hay error, intentar cargar desde archivos CSV locales
+            try:
+                st.warning("Intentando cargar datos desde archivos locales...")
+                df_modelos = pd.DataFrame()
+                df_llantas = pd.DataFrame()
+                df_valvulas = pd.DataFrame()
+                df_rines = pd.DataFrame()
+                df_equipos_mina = pd.DataFrame()
+                
+                # Intenta cargar desde CSV si existen
+                try:
+                    df_modelos = pd.read_csv("data/modelos.csv")
+                    st.success("Datos de Modelos cargados correctamente")
+                except:
+                    st.warning("No se pudieron cargar los datos de Modelos")
+                    
+                try:
+                    df_llantas = pd.read_csv("data/llantas.csv")
+                    st.success("Datos de Llantas cargados correctamente")
+                except:
+                    st.warning("No se pudieron cargar los datos de Llantas")
+                    
+                try:
+                    df_valvulas = pd.read_csv("data/valvulas.csv")
+                    st.success("Datos de Válvulas cargados correctamente")
+                except:
+                    st.warning("No se pudieron cargar los datos de Válvulas")
+                    
+                try:
+                    df_rines = pd.read_csv("data/rines.csv")
+                    st.success("Datos de Rines cargados correctamente")
+                except:
+                    st.warning("No se pudieron cargar los datos de Rines")
+                    
+                try:
+                    df_equipos_mina = pd.read_csv("data/equipos_mina.csv")
+                    st.success("Datos de Equipos Mina cargados correctamente")
+                except:
+                    st.warning("No se pudieron cargar los datos de Equipos Mina")
+                    
+                return df_modelos, df_llantas, df_valvulas, df_rines, df_equipos_mina
+                
+            except Exception as e2:
+                st.error(f"Error al cargar datos locales: {e2}")
+                return pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
+        df_modelos, df_llantas, df_valvulas, df_rines, df_equipos_mina = load_data_from_db()
 
     with tab1:
         # Agrupar por 'Equipment Description' y concatenar las descripciones y códigos de artículo
